@@ -7741,11 +7741,11 @@ a:focus {
   justify-content: space-between;
 }
 
-.main-header .top-bar .top-bar_list .search-btn img {
-  vertical-align: top;
+.main-header .top-bar .top-bar_list .search-btn {
+  display: flex;
 }
 
-.main-header .top-bar .top-bar_list a {
+.main-header .top-bar .top-bar_list .search-btn i {
   font-size: 12px;
   line-height: 15px;
   color: #666666;
@@ -7758,6 +7758,10 @@ a:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+  color: #666666;
+  transition: .3s;
 }
 
 .main-header .top-bar .top-bar_list a:hover {
@@ -7894,7 +7898,11 @@ a:focus {
   margin-right: auto;
 }
 
-.main-header ul.header-list > li.region-list:hover img {
+.main-header ul.header-list > li.region-list i {
+  font-size: 14px;
+}
+
+.main-header ul.header-list > li.region-list:hover i {
   transform: rotate(180deg);
   color: #006AFF;
 }
@@ -7988,7 +7996,7 @@ a:focus {
   background-color: #fff;
 }
 
-.overlay .search-wrapp img {
+.overlay .search-wrapp i {
   position: absolute;
   color: #666666;
   font-weight: 900;
@@ -7997,14 +8005,14 @@ a:focus {
   transition: .3s;
 }
 
-.overlay .search-wrapp img.search-img {
+.overlay .search-wrapp i.search-img {
   top: 50%;
   left: 5px;
   transform: translateY(-50%);
   color: #0055FF;
 }
 
-.overlay .search-wrapp img.clear-img {
+.overlay .search-wrapp i.clear-img {
   right: 10px;
   cursor: pointer;
   top: 50%;
@@ -8165,6 +8173,11 @@ a:focus {
 
 .login-wrapp .social-login .social-list li:not(:last-child) a {
   margin-right: 20px;
+}
+
+.login-wrapp .social-login .social-list li a {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .login-wrapp .social-login .social-list a {
