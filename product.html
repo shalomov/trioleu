@@ -8,7 +8,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/main.css">
     </head>
@@ -54,7 +54,9 @@
                                 <input type="email" placeholder="E-mail" class="form-control" required="">
                                 <input type="password" placeholder="Password" class="form-control" required="">
                                 <input type="submit" value="Sign in">
-                                <a href="#">Forgot password?</a>
+                                <input type="checkbox" id="check-login" name="check-login" required="" checked="checked">
+                                <label for="check-login">I agree with the <a href="#" class="privacy-link">Privacy policy</a></label>
+                                <a href="#" class="forgot-pass_link">Forgot password?</a>
                             </form>
                         </div>
 
@@ -63,6 +65,8 @@
                                 <input type="email" placeholder="E-mail" class="form-control" required="">
                                 <input type="password" placeholder="Password" class="form-control" required="">
                                 <input type="submit" value="Sign up">
+                                <input type="checkbox" id="check-register" name="check-register" required="" checked="checked">
+                                <label for="check-register">I agree with the <a href="#" class="privacy-link">Privacy policy</a></label>
                             </form>
                         </div>
 
@@ -223,42 +227,89 @@
         </form>
     </div>
 </div>
-        <main>
+        <section class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="breadcrumbs-list">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">AK06 Variable Speed Drive</a>
+                    </li>
+                </ul>
+                <h1 class="page-title">AK06 Variable Speed Drive</h1>
+            </div>
+        </div>
+    </div>
+    <nav class="sticky-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-end">
+                    <ul class="sticky-nav_list">
+                        <li><a href="#">Benefits </a></li>
+                        <li><a href="#">Lineup </a></li>
+                        <li><a href="#">Options </a></li>
+                        <li><a href="#">Place an order </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<main class="main-wrapp ak06-product">
     <section class="product-info">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <ul class="breadcrumbs">
-                        <li>
-                            <a href="#">Main</a>
-                        </li>
-                        <li>
-                            <a href="#">Variable Speed Drives Triol AK06</a>
-                        </li>
-                    </ul>
+                <div class="col-md-6">
+                    <img src="img/main/pr-ak06.png" alt="ak06 product">
                 </div>
-                <div class="col-12">
-                    <nav>
-                        <ul class="prod-page_nav">
-                            <li>
-                                <a href="#">Benefits</a>
-                            </li>
-                            <li>
-                                <a href="#">Lineup</a>
-                            </li>
-                            <li>
-                                <a href="#">Options</a>
-                            </li>
-                            <li>
-                                <a href="#">Make an Order</a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="col-md-6">
+                    <h3 class="sub-title">Triol Ak06</h3>
+                    <h2 class="page-title">Variable Speed Drive</h2>
+                    <div class="desc-item">
+                        <h4 class="page-title_desc">Lorem ipsum olor sit amet, consectetur adipiscing elit ut aliquam</h4>
+                        <p class="page-desc">
+                            Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent magnet motors. Triol AK06 VSD solution combines unique technical characteristics, the highest operating qualities, and excellent reliability. 
+                        </p>
+                    </div>
+                    <div class="desc-item">
+                        <h4 class="page-title_desc">Lorem ipsum olor sit amet, consectetur adipiscing elit ut aliquam</h4>
+                        <p class="page-desc">
+                            Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent magnet motors. Triol AK06 VSD solution combines unique technical characteristics, the highest operating qualities, and excellent reliability. 
+                        </p>
+                    </div>
+                    <div class="desc-item">
+                        <h4 class="page-title_desc">Lorem ipsum olor sit amet, consectetur adipiscing elit ut aliquam</h4>
+                        <p class="page-desc">
+                            Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent magnet motors. Triol AK06 VSD solution combines unique technical characteristics, the highest operating qualities, and excellent reliability. 
+                        </p>
+                    </div>
+                    <a href="#" class="page-btn">Place an order</a>
+                    <a href="#" class="page-btn dwld-btn">Download Catalog</a>
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="certificates">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="certificates-list">
+                        <li>1</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
         <section class="footer-modal">
     <div class="footer-modal_wrapp">

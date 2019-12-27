@@ -148,15 +148,22 @@ $('.clear-img').click(function () {
   $('.search-form')[0].reset();
 });
 $(document).mouseup(function (e) {
-  var div = $(".search-wrapp"),
-      loginMenu = $('.login-wrapp');
+  var div = $(".search-wrapp");
 
-  if (!div.is(e.target) && div.has(e.target).length === 0 && !loginMenu.is(e.target) && loginMenu.has(e.target).length === 0) {
+  if (!div.is(e.target) && div.has(e.target).length === 0) {
     $('.overlay').css('display', 'none');
   }
 });
 $('.login-btn').click(function () {
   $('.login-wrapp').slideToggle(200);
+});
+$(document).mouseup(function (e) {
+  var loginMenu = $('.login-wrapp'),
+      loginBtn = $('.login-btn');
+
+  if (!loginMenu.is(e.target) && loginMenu.has(e.target).length === 0 && !loginBtn.is(e.target) && loginBtn.has(e.target).length === 0) {
+    loginMenu.css('display', 'none');
+  }
 });
 $('.tabs a').click(function () {
   var tab_id = $(this).attr('data-tab');
