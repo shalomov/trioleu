@@ -106,7 +106,6 @@ $('.form-validation').submit(function (event) {
       url: $form.attr('action'),
       data: $form.serialize(),
       success: function success() {
-        $form.trigger('reset');
         $form.removeClass('was-validated');
       }
     });
