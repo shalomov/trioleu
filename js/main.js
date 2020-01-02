@@ -171,6 +171,14 @@ $('.tabs a').click(function () {
   $(this).addClass('current');
   $("#" + tab_id).addClass('current');
 });
+$('.lines-info_tabs a').click(function (e) {
+  e.preventDefault();
+  var tab_id = $(this).attr('data-tab');
+  $('.lines-info_tabs a').removeClass('current-lines');
+  $('.lines-tab_content').removeClass('current-lines');
+  $(this).addClass('current-lines');
+  $("#" + tab_id).addClass('current-lines');
+});
 
 if ($(window).width() < 992) {
   $('.lang-item').click(function (e) {
