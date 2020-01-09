@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/main.css">
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#sticky-navbar" data-offset="100">
         <header class="main-header">
     <div class="top-bar">
         <div class="container">
@@ -80,7 +80,7 @@
                                     <a href="#"><img src="img/svg/facebook.svg" alt="Triol gmail"></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="img/svg/link.svg" alt="Triol gmail"></i></a>
+                                    <a href="#"><img src="img/svg/link.svg" alt="Triol gmail"></a>
                                 </li>
                             </ul>
                         </div>
@@ -227,7 +227,7 @@
         </form>
     </div>
 </div>
-        <section class="breadcrumbs">
+        <section class="breadcrumbs" style="background-image: url('../img/product/bread-crumb-bg.jpg');">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -246,51 +246,62 @@
             </div>
         </div>
     </div>
-    <nav class="sticky-nav">
+    <div class="sticky-wrapper"></div>
+    <div class="sticky-nav" data-toggle="sticky-onscroll">
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex align-items-end">
-                    <ul class="sticky-nav_list">
-                        <li><a href="#">Benefits </a></li>
-                        <li><a href="#">Lineup </a></li>
-                        <li><a href="#">Options </a></li>
-                        <li><a href="#">Place an order </a></li>
-                    </ul>
+                    <nav id="sticky-navbar">
+                        <ul class="sticky-nav_list" >
+                            <li>
+                                <a href="#benefits" class="nav-link active">Benefits </a>
+                            </li>
+                            <li>
+                                <a href="#lineup" class="nav-link">Lineup </a>
+                            </li>
+                            <li>
+                                <a href="#options" class="nav-link">Options </a>
+                            </li>
+                            <li>
+                                <a href="#placeanorder" class="nav-link">Place an order </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
 </section>
 
 <main class="main-wrapp ak06-product">
     <section class="product-info">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-12 col-md-5 mb-2 mb-lg-0">
                     <img src="img/main/pr-ak06.png" alt="ak06 product">
                 </div>
-                <div class="col-md-6">
+                <div class="col-12 col-md-7">
                     <h3 class="sub-title">Triol Ak06</h3>
-                    <h2 class="page-title">Variable Speed Drive</h2>
+                    <h2 class="main-page_title">Variable Speed Drive</h2>
                     <div class="desc-item">
-                        <h4 class="page-title_desc">Lorem ipsum olor sit amet, consectetur adipiscing elit ut aliquam</h4>
-                        <p class="page-desc">
+                        <h4>Lorem ipsum olor sit amet, consectetur adipiscing elit ut aliquam</h4>
+                        <p>
                             Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent magnet motors. Triol AK06 VSD solution combines unique technical characteristics, the highest operating qualities, and excellent reliability. 
                         </p>
                     </div>
                     <div class="desc-item">
-                        <h4 class="page-title_desc">Lorem ipsum olor sit amet, consectetur adipiscing elit ut aliquam</h4>
-                        <p class="page-desc">
+                        <h4>Lorem ipsum olor sit amet, consectetur adipiscing elit ut aliquam</h4>
+                        <p>
                             Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent magnet motors. Triol AK06 VSD solution combines unique technical characteristics, the highest operating qualities, and excellent reliability. 
                         </p>
                     </div>
                     <div class="desc-item">
-                        <h4 class="page-title_desc">Lorem ipsum olor sit amet, consectetur adipiscing elit ut aliquam</h4>
-                        <p class="page-desc">
+                        <h4>Lorem ipsum olor sit amet, consectetur adipiscing elit ut aliquam</h4>
+                        <p>
                             Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent magnet motors. Triol AK06 VSD solution combines unique technical characteristics, the highest operating qualities, and excellent reliability. 
                         </p>
                     </div>
-                    <a href="#" class="page-btn">Place an order</a>
+                    <a href="#placeanorder" class="page-btn">Place an order</a>
                     <a href="#" class="page-btn dwld-btn">Download Catalog</a>
                 </div>
             </div>
@@ -322,174 +333,242 @@
             </div>
         </div>
     </section>
-    <section class="benefits">
+    <section id="benefits" class="benefits">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h2 class="title-block">Distinctive benefits</h2>
-                    <table>
-                        <tr>
-                            <td>
-                                Maximization of production
-                            </td>
-                            <td>
-                                <ul>
-                                    <li>Voltage Sags protection</li>
-                                    <li>“Catch on the fly” mode</li>
-                                    <li>Gas lock algorithm</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Investment Savings</td>
-                            <td>
-                                <ul>
-                                    <li>More than 100 models in 6 lines </li>
-                                    <li>Universal solution for Induction and Permanent Magnet Motors</li>
-                                    <li>Wide range of protocols to interface with any digital network</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Cost-Saving</td>
-                            <td>
-                                <ul>
-                                    <li>Voltage Optimization Mode</li>
-                                    <li>Modes of automatic start</li>
-                                    <li>Triol Vector Control Mode</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="custom-wrapp_table">
+                        <table>
+                            <tr>
+                                <td>
+                                    Maximization of production
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Voltage Sags protection</li>
+                                        <li>“Catch on the fly” mode</li>
+                                        <li>Gas lock algorithm</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Investment Savings</td>
+                                <td>
+                                    <ul>
+                                        <li>More than 100 models in 6 lines </li>
+                                        <li>Universal solution for Induction and Permanent Magnet Motors</li>
+                                        <li>Wide range of protocols to interface with any digital network</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cost-Saving</td>
+                                <td>
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Installation of Triol modem in surface equipment, enable operators and technologist remotely monitor equipment status, allowing to quickly develop necessary solutions. Data received through the modem can be stored for convenient processing and prediction of equipment operation, collect statistics and plan diagnostic measures at the facilit</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="lines-wrapp">
+    <section id="lineup" class="lines-wrapp">
         <div class="container">
             <div class="row d-flex">
                 <div class="col-12">
                     <h2 class="title-block">AK06 Variable Speed Drive Lineup</h2>
                 </div>
-                <div class="col-md-4 d-flex align-content-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-content-stretch">
                     <div class="line-item">
                         <a href="#" class="line-link">
-                            <img src="img/main/line-item.jpg" alt="Triol line">
+                            <img src="img/main/line-item.png" alt="Triol line">
+                            <h3>universal drive</h3>
                         </a>
                         <h4 class="line-title">TRIOL AK06 Line UD</h4>
-                        <p class="line-desc">Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent.</p>
+                        <p>Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent.</p>
                         <a href="#" class="line-more">Learn more</a>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-content-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-content-stretch">
                     <div class="line-item">
                         <a href="#" class="line-link">
-                            <img src="img/main/line-item.jpg" alt="Triol line">
+                            <img src="img/main/line-item.png" alt="Triol line">
+                            <h3>universal drive</h3>
                         </a>
                         <h4 class="line-title">TRIOL AK06 Line UD</h4>
-                        <p class="line-desc">Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent.</p>
+                        <p>Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent.</p>
                         <a href="#" class="line-more">Learn more</a>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-content-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-content-stretch">
                     <div class="line-item">
                         <a href="#" class="line-link">
-                            <img src="img/main/line-item.jpg" alt="Triol line">
+                            <img src="img/main/line-item.png" alt="Triol line">
+                            <h3>universal drive</h3>
                         </a>
                         <h4 class="line-title">TRIOL AK06 Line UD</h4>
-                        <p class="line-desc">Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent.</p>
+                        <p>Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent.</p>
                         <a href="#" class="line-more">Learn more</a>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-content-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-content-stretch">
                     <div class="line-item">
                         <a href="#" class="line-link">
-                            <img src="img/main/line-item.jpg" alt="Triol line">
+                            <img src="img/main/line-item.png" alt="Triol line">
+                            <h3>universal drive</h3>
                         </a>
                         <h4 class="line-title">TRIOL AK06 Line UD</h4>
-                        <p class="line-desc">Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent.</p>
+                        <p>Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent.</p>
                         <a href="#" class="line-more">Learn more</a>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-content-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-content-stretch">
                     <div class="line-item">
                         <a href="#" class="line-link">
-                            <img src="img/main/line-item.jpg" alt="Triol line">
+                            <img src="img/main/line-item.png" alt="Triol line">
+                            <h3>universal drive</h3>
                         </a>
                         <h4 class="line-title">TRIOL AK06 Line UD</h4>
-                        <p class="line-desc">Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent.</p>
+                        <p>Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent.</p>
                         <a href="#" class="line-more">Learn more</a>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-content-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-content-stretch">
                     <div class="line-item">
                         <a href="#" class="line-link">
-                            <img src="img/main/line-item.jpg" alt="Triol line">
+                            <img src="img/main/line-item.png" alt="Triol line">
+                            <h3>universal drive</h3>
                         </a>
                         <h4 class="line-title">TRIOL AK06 Line UD</h4>
-                        <p class="line-desc">Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent.</p>
+                        <p>Variable Speed Drive (VSD) AK06 series is designed to control and protect electric submersible and surface pumps with induction and permanent.</p>
                         <a href="#" class="line-more">Learn more</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="lines-info">
+    <section id="options" class="options-info">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="lines-info_tabs">
                         <a href="#" data-tab="linestab-1" class="current-lines">Functions</a>
                         <a href="#" data-tab="linestab-2">Safety</a>
-                        <a href="#" data-tab="linestab-1">Patents</a>
-                        <a href="#" data-tab="linestab-2">Options available</a>
+                        <a href="#" data-tab="linestab-3">Patents</a>
+                        <a href="#" data-tab="linestab-4">Options available</a>
                     </div>
-                    <div id="linestab-1" class="lines-tab_content current-lines">
-                        <div class="row">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="linestab-1" class="lines-tab_content current-lines custom-wrapp_table">
+                                <table>
+                                    <tr>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                        <th>Definition</th>
+                                    </tr>
+                                    <tr>
+                                        <td>UD</td>
+                                        <td>NEMA4, NEMA4X, -20°С …+60°С; 6/12/18/24 pulse</td>
+                                        <td>Universal Drive</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UD</td>
+                                        <td>NEMA4, NEMA4X, -20°С …+60°С; 6/12/18/24 pulse</td>
+                                        <td>Universal Drive</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UD</td>
+                                        <td>NEMA4, NEMA4X, -20°С …+60°С; 6/12/18/24 pulse</td>
+                                        <td>Universal Drive</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UD</td>
+                                        <td>NEMA4, NEMA4X, -20°С …+60°С; 6/12/18/24 pulse</td>
+                                        <td>Universal Drive</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UD</td>
+                                        <td>NEMA4, NEMA4X, -20°С …+60°С; 6/12/18/24 pulse</td>
+                                        <td>Universal Drive</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <div id="linestab-2" class="lines-tab_content">
-                         Possimus vel temporibus fugit praesentium qui ipsum?
+                    <div class="row">
+                        <div class="col-12 offset-xl-3 col-xl-6">
+                            <div id="linestab-2" class="lines-tab_content custom-wrapp_table">
+                                <h3>Operation of the electric motor in the following modes</h3>
+                                <p>Triol High-Voltage Choke is an effective element of Downhole Measuring System Triol TM01 that provides a reliable and guaranteed communication channel between surface and submersible units of TM01. </p>
+                            </div>
+                       </div>
                     </div>
-                    <div id="linestab-3" class="lines-tab_content current-lines">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia magnam tempora in distinctio, est quod perspiciatis incidunt quas ipsam culpa consequatur sed suscipit? Possimus vel temporibus fugit praesentium qui ipsum?
+                    <div class="row">
+                        <div class="col-12 offset-xl-3 col-xl-6">
+                            <div id="linestab-3" class="lines-tab_content custom-wrapp_table">
+                                <ul>
+                                    <li>Operation on the assigned time program with separately programmable times of ESP on and off state </li>
+                                    <li>Smooth acceleration and deceleration of ESP at a given rate</li>
+                                    <li>On and off motor settings</li>
+                                    <li>Reversing the motor
+                                        <ul>
+                                            <li>Operation on the assigned time program with separately programmable times of ESP on and off state </li>
+                                            <li>Smooth acceleration and deceleration of ESP at a given rate</li>
+                                            <li>On and off motor settings</li>
+                                            <li>Reversing the motor</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div id="linestab-4" class="lines-tab_content">
-                         Possimus vel temporibus fugit praesentium qui ipsum?
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="linestab-4" class="lines-tab_content custom-wrapp_table">
+                                <h3>Operation of the electric motor in the following modes</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, sapiente, accusantium pariatur voluptatibus quibusdam molestias asperiores eligendi animi minima perspiciatis aliquam adipisci, unde facere quae aut laudantium esse. Non, earum!</p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
-    <section class="footer-form">
-        <div class="container">
+    <section id="placeanorder" class="footer-form">
+        <div class="container block-form" style="background-image: url('../img/product/formbg.jpg');">
             <div class="row">
-                <div class="col-12 offset-lg-2 col-lg-7">
+                <div class="col-12 offset-md-2 col-md-8  offset-lg-2 col-lg-8">
                     <div class="row">
                         <div class="col-12">
                             <h2 class="title-block">Got interested in the equipment?</h2>
                         </div>
-
-                            <div class="col-12">
-                                <div class="row">
-                                    <form action="" class="bottom-form">
-                                        <div class="col-md-2">
-                                            <input type="text" placeholder="Name">
-                                        </div>
-                                        <div class="col-md-2">
-                                            <select name="" id="">
-                                                <option value="" selected disabled hidden>Line</option>
-                                                <option value="">option1</option>
-                                                <option value="">option2</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <input type="email" placeholder="E-mail">
-                                        </div>
-                                    </form>
+                        <div class="col-10 offset-1 col-sm-12 offset-sm-0">
+                            <form class="form-validation bottom-form" action="" method="post" novalidate="">
+                                <div class="form-row">
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" placeholder="Name" required>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select name="line-item">
+                                            <option data-display="Line"></option>
+                                            <option value="option1">option1</option>
+                                            <option value="option2">option2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" placeholder="E-mail" required>
+                                    </div>
+                                    <div class="col-md-12 d-flex flex-column">
+                                        <textarea rows="9" placeholder="Comment"></textarea>
+                                        <button type="submit" class="footer-form_btn">Place an order</button>
+                                    </div>
                                 </div>
-                            </div>
-
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>  
@@ -641,7 +720,9 @@
 </section>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>
