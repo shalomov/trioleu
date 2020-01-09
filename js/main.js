@@ -208,11 +208,11 @@ $('.sticky-nav_list a, a.page-btn').bind('click.smoothscroll', function (event) 
   var target = this.hash,
       $target = $(target);
 
-  if ($(window).width() < 1201) {
+  if ($(window).width() >= 767) {
     $('html, body').stop().animate({
       'scrollTop': $target.offset().top - 60
     }, 900, 'swing');
-  } else if ($(window).width() > 1199) {
+  } else if ($(window).width() < 767) {
     $('html, body').stop().animate({
       'scrollTop': $target.offset().top - 30
     }, 900, 'swing');

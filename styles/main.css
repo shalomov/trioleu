@@ -13934,14 +13934,6 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-bottom: 20px;
   }
 
-  .breadcrumbs .sticky-nav_list li a {
-    padding: 10px 24px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 19px;
-  }
-
   .certificates .certificates-list li {
     width: initial;
   }
@@ -15916,6 +15908,14 @@ input[type="search"]::-webkit-search-results-decoration {
   .block-title {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  .breadcrumbs .sticky-nav_list li a {
+    padding: 10px 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .certificates .certificates-list li:not(:last-child) {
