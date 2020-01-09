@@ -7806,6 +7806,7 @@ a.text-dark:focus {
   line-height: 25px;
   text-align: center;
   margin-bottom: 16px;
+  color: #000;
 }
 
 .main-wrapp .sub-title {
@@ -7874,6 +7875,10 @@ a.text-dark:focus {
 
 .certificates {
   background-color: #F8F9FC;
+}
+
+.certificates .title-block {
+  padding-top: 12px;
 }
 
 .certificates .certificates-list {
@@ -8021,6 +8026,48 @@ a.text-dark:focus {
   margin-top: auto;
 }
 
+.options-info table,
+.specifications table {
+  width: 100%;
+}
+
+.options-info table tr th,
+.specifications table tr th {
+  background-color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 12px;
+  border: 1px solid #fff;
+}
+
+.options-info table tr th:first-child,
+.specifications table tr th:first-child {
+  text-align: center;
+}
+
+.options-info table tr td,
+.specifications table tr td {
+  color: #4D4D4D;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 12px;
+  vertical-align: top;
+}
+
+.options-info table tr td:first-child,
+.specifications table tr td:first-child {
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+.options-info table tr:nth-child(2n+1) td,
+.specifications table tr:nth-child(2n+1) td {
+  background-color: #F9FAFC;
+}
+
 .options-info {
   padding: 0 0 24px;
 }
@@ -8032,42 +8079,6 @@ a.text-dark:focus {
 
 .options-info .lines-tab_content.current-lines {
   display: inherit;
-}
-
-.options-info .lines-tab_content table {
-  width: 100%;
-}
-
-.options-info .lines-tab_content table tr th {
-  background-color: #000;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 20px;
-  color: #FFFFFF;
-  padding: 12px;
-  border: 1px solid #fff;
-}
-
-.options-info .lines-tab_content table tr th:first-child {
-  text-align: center;
-}
-
-.options-info .lines-tab_content table tr td {
-  color: #4D4D4D;
-  font-size: 15px;
-  line-height: 20px;
-  padding: 12px;
-  vertical-align: top;
-}
-
-.options-info .lines-tab_content table tr td:first-child {
-  text-align: center;
-  font-weight: bold;
-  color: #000000;
-}
-
-.options-info .lines-tab_content table tr:nth-child(2n+1) td {
-  background-color: #F9FAFC;
 }
 
 .options-info .lines-tab_content h3,
@@ -8241,6 +8252,93 @@ a.text-dark:focus {
   overflow: auto;
 }
 
+.main-wrapp.line-product {
+  padding-top: 0;
+}
+
+.main-wrapp.line-product .certificates {
+  margin-bottom: 72px;
+}
+
+.line-title {
+  font-family: 'BorisBlackBloxx', serif;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.line-title:first-line {
+  color: #FF7F00;
+}
+
+.line-info {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.line-info .line-title {
+  align-self: center;
+}
+
+.line-info .line-img {
+  margin-bottom: 24px;
+}
+
+.line-info .title-block {
+  color: #fff;
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.line-info .ben-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 5px;
+  padding-top: 16px;
+  position: relative;
+}
+
+.line-info .ben-title:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #FF7F00;
+  top: 0;
+}
+
+.line-info .ben-subtitle {
+  font-size: 16px;
+  line-height: 26px;
+  color: #E5E5E5;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.about-info {
+  padding-top: 72px;
+  padding-bottom: 40px;
+}
+
+.about-info .page-btn {
+  display: inline-block;
+  float: none;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.specifications {
+  margin-bottom: 72px;
+}
+
 body {
   min-width: 320px;
   font-family: 'Roboto', sans-serif;
@@ -8275,6 +8373,7 @@ a:focus {
 p {
   font-size: 15px;
   line-height: 22px;
+  margin-bottom: 8px;
 }
 
 h4 {
@@ -16981,6 +17080,10 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-right: 16px;
   }
 
+  .certificates .title-block {
+    padding-top: 24px;
+  }
+
   .certificates .certificates-list {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -17051,24 +17154,26 @@ input[type="search"]::-webkit-search-results-decoration {
     color: #FF7F00;
   }
 
+  .options-info table tr th,
+  .specifications table tr th {
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .options-info table tr td,
+  .specifications table tr td {
+    padding: 12px 24px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
   .options-info {
     padding: 48px 0;
   }
 
   .options-info .lines-tab_content {
     padding: 48px 0;
-  }
-
-  .options-info .lines-tab_content table tr th {
-    padding: 12px 24px;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .options-info .lines-tab_content table tr td {
-    padding: 12px 24px;
-    font-size: 18px;
-    line-height: 22px;
   }
 
   .options-info .lines-info_tabs a {
@@ -17113,6 +17218,7 @@ input[type="search"]::-webkit-search-results-decoration {
   p {
     font-size: 16px;
     line-height: 26px;
+    margin-bottom: 16px;
   }
 
   h4 {
