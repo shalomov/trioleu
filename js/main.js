@@ -118,11 +118,14 @@ $(document).ready(function () {
   }); //
   // modal reg
 
-  $('.dwnld-link').click(function () {
-    $('.modal-reg').fadeIn();
-    $('body').addClass('modal-active');
-    return false;
-  });
+  if ($('.modal-reg').length !== 0) {
+    $('.dwnld-link').click(function () {
+      $('.modal-reg').fadeIn();
+      $('body').addClass('modal-active');
+      return false;
+    });
+  }
+
   $('.modal-reg_close').click(function () {
     $('.modal-reg').fadeOut();
     $('body').removeClass('modal-active');
