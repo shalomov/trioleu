@@ -44,7 +44,7 @@
                             <a href="#">Sign in</a>
                         </li>
                     </ul>
-                    <div class="login-wrapp">
+                    <!-- <div class="login-wrapp">
                         <div class="form-links_wrapp tabs">
                             <a href="#" data-tab="tab-1" class="current">Sign in</a>
                             <a href="#" data-tab="tab-2">New account</a>
@@ -84,7 +84,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -577,15 +577,36 @@
     </section>
 </main>
         <section class="footer-modal">
-    <div class="footer-modal_wrapp">
-        <h2>Send a request</h2>
-        <form class="form-validation footer-contus" action="" method="post" novalidate>
-            <input type="text"  name="contus-name" class="form-control" placeholder="Your name" required>
-            <input type="email" name="contus-email" class="form-control"  placeholder="E-mail" required>
-            <textarea name="contus-comment" rows="2" placeholder="Message"></textarea>
-            <input type="submit" value="Send">
-        </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-modal_wrapp">
+                    <i class="material-icons modal-reg_close">close</i>
+                    <div class="row">
+                        <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                            <h2 class="footer-modal_title">Send a message</h2>
+                            <form class="form-validation footer-contus" action="" method="post" novalidate>
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <input type="text"  name="contus-name" class="form-control" placeholder="Your or company name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" name="contus-email" class="form-control"  placeholder="E-mail" required>
+                                    </div>
+                                    <div class="col-md-12 d-flex flex-column">
+                                        <input type="text"  name="contus-name" class="form-control" placeholder="Subject">
+                                        <textarea name="contus-comment" class="contus-comment" placeholder="Message"></textarea>
+                                        <input type="submit" value="Send message">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </section>
 <footer class="main-footer">
     <div class="container">
