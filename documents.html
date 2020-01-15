@@ -252,13 +252,17 @@
         <div class="row">
             <div class="col-12">
                 <div class="register-wrapp">
-                    <h2 class="title-modal_reg">Sign in to continue <i class="material-icons modal-reg_close">close</i></h2>
-                    <div class="form-register-tabs">
-                        <a href="#" data-tab="register-tab-1" class="current-reg">Sign in</a>
-                        <a href="#" data-tab="register-tab-2">New account</a>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="title-modal_reg">Sign in to continue <i class="material-icons modal-reg_close">close</i></h2>
+                            <div class="form-register-tabs">
+                                <a href="#" data-tab="register-tab-1" class="current-reg">Sign in</a>
+                                <a href="#" data-tab="register-tab-2">New account</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                        <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
                             <div id="register-tab-1" class="tab-register_content current-reg">
                                 <form class="form-validation" action="" method="post" novalidate="">
                                     <input type="email" placeholder="E-mail" class="form-control" required="">
@@ -272,7 +276,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                        <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
                             <div id="register-tab-2" class="tab-register_content">
                                 <form class="form-validation" action="" method="post" novalidate="">
                                     <input type="text" placeholder="Your or company name" class="form-control" required="">
@@ -308,10 +312,59 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="reset-wrapp">
+                        <div class="row reset-form_row">
+                            <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+                                <h2 class="title-modal_reg">Sign in to continue</h2>
+                                <h3 class="subtitle-reset">You will receive a link to create a new password</h3>
+                                <form class="form-validation reset-pass_form" action="" method="post" novalidate="">
+                                    <input type="email" placeholder="E-mail" class="form-control" required="">
+                                    <div class="reg-form_footer">
+                                        <input type="submit" value="Reset password">
+                                        <a href="#" class="forgot-pass_link go-back"><i class="material-icons">arrow_back</i> Back to sign page</a>
+                                    </div>
+                                </form>
 
-
-                    
+                            </div>
+                        </div>
+                        <div class="row success-form_row">
+                            <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+                                <h2 class="title-modal_reg">Reset your password</h2>
+                                <h3 class="subtitle-reset">You will receive a link to create a new password</h3>
+                                <p>
+                                    Our outstanding products and services, exceptional open-minded individual approach, solid technical and after-sale support make Triol your reliable and ready-for-challenges Partner
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-pass_wrapp">
+                        <div class="row new-pass_row">
+                            <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 d-flex flex-column justify-content-center">
+                                <h2 class="title-modal_reg">Create new password</h2>
+                                <form class="form-validation reset-pass_form" action="" method="post" novalidate="">
+                                    <input type="password" placeholder="Password" class="form-control" required="">
+                                    <input type="password" placeholder="Confirm new password" class="form-control" required="">
+                                    <div class="reg-form_footer">
+                                        <input type="submit" value="Reset password">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row success-pass_row">
+                            <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 d-flex justify-content-center flex-column">
+                                <img src="img/svg/successfully-changed.svg" alt="successfully changed">
+                                <h2 class="title-modal_reg">Your password changed successfully</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-acc_wrapp">
+                        <div class="row acc-success">
+                            <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 d-flex justify-content-center flex-column">
+                                <img src="img/svg/successfully-created.svg" alt="successfully changed">
+                                <h2 class="title-modal_reg">Your password changed successfully</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -603,7 +656,21 @@
         </div>
     </div>
 </main>
-        <section class="footer-modal">
+        
+<section class="cookies">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-9 offset-xl-2 col-xl-6">
+                <h3>Triol Corporation websites use cookies as following</h3>
+                <p>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services</p>
+            </div>
+            <div class="col-12 col-sm-3 col-xl-2 d-flex justify-content-center align-items-center">
+                <button class="cookies-agree">Agree</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer-modal">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -623,7 +690,11 @@
                                     <div class="col-md-12 d-flex flex-column">
                                         <input type="text"  name="contus-name" class="form-control" placeholder="Subject">
                                         <textarea name="contus-comment" class="contus-comment" placeholder="Message"></textarea>
-                                        <input type="submit" value="Send message">
+                                        <div class="subscribe-footer">
+                                            <input type="checkbox" id="check-subscribe" name="check-subscribe" required="" checked="checked">
+                                            <label for="check-subscribe">Subscribe to newsletter</label>
+                                            <input type="submit" value="Send message">
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -638,7 +709,7 @@
 <footer class="main-footer">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-10 d-flex flex-wrap flex-lg-nowrap justify-content-between justify-content-lg-start">
+            <div class="col-6 col-lg-2">
                 <ul class="footer-menu_list">
                     <li>
                         <a href="#">About Us</a>
@@ -659,6 +730,8 @@
                         <a href="#">Customers</a>
                     </li>
                 </ul>
+            </div>
+            <div class="col-6 col-lg-2">
                 <ul class="footer-menu_list">
                     <li>
                         <a href="#">Products</a>
@@ -679,6 +752,8 @@
                         <a href="#">LESP EP01</a>
                     </li>
                 </ul>
+            </div>
+            <div class="col-6 col-lg-2">
                 <ul class="footer-menu_list">
                     <li>
                         <a href="#">Solutions</a>
@@ -696,6 +771,8 @@
                         <a href="#">Solutions for HVAC</a>
                     </li>
                 </ul>
+            </div>
+            <div class="col-6 col-lg-2">
                 <ul class="footer-menu_list">
                     <li>
                         <a href="#">Documents</a>
@@ -713,6 +790,8 @@
                         <a href="#">Software</a>
                     </li>
                 </ul>
+            </div>
+            <div class="col-6 col-lg-1">
                 <ul class="footer-menu_list">
                     <li>
                         <a href="#">News</a>
@@ -725,23 +804,37 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-sm-6 col-lg-2 d-flex flex-column">
-                <a href="#" class="footer-contact_us">Contact Us</a>
-                <a href="mailto:office.eu@triolcorp.com" class="footer-email">office.eu@triolcorp.com</a>
-                <ul class="footer-social_list">
-                    <li>
-                        <a href="#" target="_blank"><img src="img/svg/footer-link.svg" alt="footer link"></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="img/svg/footer-facebook.svg" alt="footer link"></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="img/svg/footer-youtube.svg" alt="footer link"></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="img/svg/footer-instagram.svg" alt="footer link"></a>
-                    </li>
-                </ul>
+            <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-between">
+                <div class="row">
+                    <div class="col-6 col-lg-12 col-xl-7">
+                        <a href="mailto:office.eu@triolcorp.com" class="footer-email">office.eu@triolcorp.com</a>
+                        <ul class="footer-social_list">
+                            <li>
+                                <a href="#" target="_blank"><img src="img/svg/footer-link.svg" alt="footer link"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="img/svg/footer-facebook.svg" alt="footer link"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="img/svg/footer-youtube.svg" alt="footer link"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="img/svg/footer-instagram.svg" alt="footer link"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-12 col-xl-5 d-flex justify-content-end justify-content-lg-start justify-content-xl-end">
+                        <a href="#" class="footer-contact_us">Contact Us</a>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="subscribe-title">Subscribe to newsletter</h4>
+                        <form class="form-validation subscribe-form" action="" method="post" novalidate>
+                            <input type="email" class="form-control" placeholder="Your e-mail" required>
+                            <button class="subscribe-submit">Subscribe now</button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -749,12 +842,16 @@
 <section class="footer-bar">
     <div class="container">
         <div class="row">
-            <div class="col-6 col-lg-9">
+            <div class="col-6 col-sm-2 col-xl-1 d-flex justify-content-center justify-content-sm-start align-items-center">
                 <a href="#" class="footer-logo">
                     <img src="img/svg/logo-footer.svg" alt="Triol logo footer">
                 </a>
             </div>
-            <div class="col-6 col-lg-3 d-flex align-items-center">
+            <div class="col-6 col-sm-5 col-xl-8">
+                <span class="footer-address_title">Address</span> <br>
+                <span class="footer-address_info">Ave. Industrial 10 K, Kharkov, 61007, Ukraine</span>
+            </div>
+            <div class="col-12 col-sm-5 col-xl-3 d-flex justify-content-center justify-content-sm-start align-items-center">
                 <ul class="footer-bar_list">
                     <li>
                         <a href="#">Privacy Policy</a>
