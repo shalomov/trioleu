@@ -7719,6 +7719,7 @@ a.text-dark:focus {
   margin-bottom: 24px;
   color: #000;
   display: inline-block;
+  transition: .3s;
 }
 
 .info-block .blog-title_link:hover,
@@ -7731,7 +7732,7 @@ a.text-dark:focus {
   margin-bottom: 11px;
 }
 
-.info-block .tag-list li {
+.info-block .tag-list li a {
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
@@ -7740,6 +7741,13 @@ a.text-dark:focus {
   border-radius: 6px;
   margin-right: 6px;
   margin-bottom: 5px;
+  display: inline-block;
+  color: #000;
+  transition: .3s;
+}
+
+.info-block .tag-list li a:hover {
+  color: #0055CC;
 }
 
 .info-img {
@@ -7796,6 +7804,10 @@ a.text-dark:focus {
   margin-bottom: 24px;
   font-size: 15px;
   line-height: 17px;
+}
+
+.subscribe-form .subscribe-form_home input:focus {
+  box-shadow: 0 0 20px 3px #0055CC;
 }
 
 .subscribe-form .subscribe-form_home input::placeholder {

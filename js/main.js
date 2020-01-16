@@ -146,7 +146,7 @@ $(document).ready(function () {
       });
     }
   });
-  $('input[type="email"]').attr("pattern", "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$");
+  $('input[type="email"]').attr("pattern", "^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$");
   $('.footer-contact_us').click(function (e) {
     e.preventDefault();
     $('body').addClass('modal-active');
