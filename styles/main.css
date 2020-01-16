@@ -9217,6 +9217,11 @@ a.text-dark:focus {
   top: -100%;
   z-index: 33;
   cursor: pointer;
+  transition: .3s;
+}
+
+.modal-reg .title-modal_reg .modal-reg_close:hover {
+  opacity: .7;
 }
 
 .search-form_result {
@@ -10264,6 +10269,11 @@ input[type="search"]::-webkit-search-results-decoration {
   top: 6px;
   color: #B2B2B2;
   cursor: pointer;
+  transition: .3s;
+}
+
+.footer-modal .footer-modal_wrapp .modal-reg_close:hover {
+  opacity: .7;
 }
 
 .footer-modal .footer-contus {

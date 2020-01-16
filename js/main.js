@@ -146,7 +146,7 @@ $(document).ready(function () {
       });
     }
   });
-  $('input[type="email"]').attr("pattern", "^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$");
+  $('input[type="email"]').attr("pattern", "^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$");
   $('.footer-contact_us').click(function (e) {
     e.preventDefault();
     $('body').addClass('modal-active');
@@ -308,10 +308,12 @@ function successSendResetPass() {
   setTimeout(hideModal, 2000);
 }
 
-function CreateNewPass() {
+function createNewPass() {
   $('.new-pass_wrapp').css('display', 'flex');
   $('.new-pass_row').css('display', 'flex');
   $('.success-pass_row').css('display', 'none');
+  $('.modal-reg').fadeIn();
+  $('body').addClass('reg-modal-active');
 }
 
 function successPass() {
