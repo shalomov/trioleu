@@ -104,6 +104,44 @@ $('.about-info_tabs a').click(function (e) {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/career/career.js":
+/*!*********************************************!*\
+  !*** ./src/blocks/modules/career/career.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$('.jobs-list_tags li').click(function () {
+  $('.jobs-list_tags li').removeClass('active-position');
+  $(this).addClass('active-position');
+});
+$('.job-item').click(function () {
+  $(this).toggleClass('active-job_item');
+  $(this).next().toggle();
+});
+;
+
+(function ($, window, document, undefined) {
+  $('.resume-add_cv').each(function () {
+    var $input = $(this),
+        $label = $input.next('label'),
+        labelVal = $label.html();
+    $input.on('change', function (e) {
+      var fileName = '';
+      if (this.files && this.files.length > 1) fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);else if (e.target.value) fileName = e.target.value.split('\\').pop();
+      if (fileName) $label.find('span').html(fileName);else $label.html(labelVal);
+    }); // Firefox bug fix
+
+    $input.on('focus', function () {
+      $input.addClass('has-focus');
+    }).on('blur', function () {
+      $input.removeClass('has-focus');
+    });
+  });
+})(jQuery, window, document);
+
+/***/ }),
+
 /***/ "./src/blocks/modules/contacts/contacts.js":
 /*!*************************************************!*\
   !*** ./src/blocks/modules/contacts/contacts.js ***!
@@ -372,40 +410,41 @@ $('.forgot-pass_link').click(function (e) {
     e.preventDefault();
     $('.reset-wrapp').css('display', 'none');
   });
-}); // modal functions
-
-function successSendResetPass() {
-  $('.success-form_row').css('display', 'flex');
-  $('.reset-form_row').css('display', 'none');
-  setTimeout(hideModal, 2000);
-}
-
-function createNewPass() {
-  $('.new-pass_wrapp').css('display', 'flex');
-  $('.new-pass_row').css('display', 'flex');
-  $('.success-pass_row').css('display', 'none');
-  $('.modal-reg').fadeIn();
-  $('body').addClass('reg-modal-active');
-}
-
-function successPass() {
-  $('.new-pass_wrapp').css('display', 'flex');
-  $('.new-pass_row').css('display', 'none');
-  $('.success-pass_row').css('display', 'flex');
-  setTimeout(hideModal, 2000);
-}
-
-function successCreateAcc() {
-  $('.new-acc_wrapp').css('display', 'flex');
-  setTimeout(hideModal, 2000);
-}
+}); // modal reg end
+// modal functions
+// function successSendResetPass() {
+//     $('.success-form_row').css('display','flex');
+//     $('.reset-form_row').css('display','none');
+//     setTimeout(hideModal, 2000);
+// }
+// function createNewPass() {
+//     $('.new-pass_wrapp').css('display','flex');
+//     $('.new-pass_row').css('display','flex');
+//     $('.success-pass_row').css('display','none');
+//     $('.modal-reg').fadeIn();
+//     $('body').addClass('reg-modal-active');
+// }
+// function successPass() {
+//     $('.new-pass_wrapp').css('display','flex');
+//     $('.new-pass_row').css('display','none');
+//     $('.success-pass_row').css('display','flex');
+//     setTimeout(hideModal, 2000);
+//     setTimeout(function () {
+//         location = location.origin + location.pathname + '?to_auth=true';
+//     },2500);
+// }
+// function successCreateAcc() {
+//     $('.new-acc_wrapp').css('display','flex');
+//     setTimeout(hideModal, 2000);
+// }
 
 function hideModal() {
   $('.modal-reg').fadeOut("slow", function () {
     $(".register-wrapp div").removeAttr("style");
   });
 } // modal functions end
-// modal reg end
+// path to func
+// \plugins\jorgeandrade\subscribe\assets\javascript\subscribe-scripts.js
 
 /***/ }),
 
@@ -586,8 +625,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_about_about__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_about_about__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/contacts/contacts */ "./src/blocks/modules/contacts/contacts.js");
 /* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_career_career__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/career/career */ "./src/blocks/modules/career/career.js");
+/* harmony import */ var _modules_career_career__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_career_career__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
