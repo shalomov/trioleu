@@ -8203,91 +8203,6 @@ a.text-dark:focus {
   color: #000;
 }
 
-.footer-form .title-block {
-  color: #fff;
-  margin-bottom: 16px;
-}
-
-.footer-form .block-form {
-  background-size: cover;
-  border-radius: 6px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.footer-form .bottom-form input,
-.footer-form .bottom-form textarea,
-.footer-form .bottom-form select {
-  width: 100%;
-  margin-bottom: 12px;
-}
-
-.footer-form .bottom-form input,
-.footer-form .bottom-form textarea {
-  padding: 12px;
-  font-size: 15px;
-  line-height: 17px;
-  color: #999999;
-  border-radius: 6px;
-  height: auto;
-  border: 1px solid #fff;
-}
-
-.footer-form .bottom-form input::placeholder {
-  color: #999999;
-}
-
-.footer-form .bottom-form textarea {
-  resize: none;
-}
-
-.footer-form .bottom-form textarea:focus {
-  outline: none;
-}
-
-.footer-form .footer-form_btn {
-  padding: 14px 24px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  border: none;
-  border-radius: 6px;
-  transition: .3s;
-  align-self: flex-end;
-}
-
-.footer-form .footer-form_btn:hover {
-  background-color: #fff;
-}
-
-.footer-form .nice-select {
-  width: 100%;
-  padding: 12px;
-  font-size: 15px;
-  line-height: 17px;
-  color: #999999;
-  border-radius: 6px;
-  height: auto;
-  margin-bottom: 12px;
-}
-
-.footer-form .nice-select.open .list {
-  width: 100%;
-}
-
-.footer-form .nice-select.open .list li:first-child {
-  display: none;
-}
-
-.footer-form .nice-select.open .list li:not(:first-child) {
-  padding: 14px 24px;
-  font-size: 16px;
-  line-height: 18px;
-  border-radius: 6px;
-  height: auto;
-}
-
 .scrollspy-example {
   position: relative;
   height: 200px;
@@ -9191,11 +9106,13 @@ a.text-dark:focus {
 }
 
 .main-content .first-about {
-  height: 200px;
+  height: 240px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-content .first-about .title-about {
@@ -9925,6 +9842,151 @@ a.text-dark:focus {
   line-height: 28px;
 }
 
+.attach-resume .resume-form input,
+.attach-resume .resume-form textarea,
+.attach-resume .resume-form select,
+.attach-resume .bottom-form input,
+.attach-resume .bottom-form textarea,
+.attach-resume .bottom-form select,
+.footer-form .resume-form input,
+.footer-form .resume-form textarea,
+.footer-form .resume-form select,
+.footer-form .bottom-form input,
+.footer-form .bottom-form textarea,
+.footer-form .bottom-form select {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.attach-resume .resume-form input,
+.attach-resume .resume-form textarea,
+.attach-resume .bottom-form input,
+.attach-resume .bottom-form textarea,
+.footer-form .resume-form input,
+.footer-form .resume-form textarea,
+.footer-form .bottom-form input,
+.footer-form .bottom-form textarea {
+  padding: 12px;
+  font-size: 15px;
+  line-height: 17px;
+  color: #999999;
+  border-radius: 6px;
+  height: auto;
+  border: 1px solid #fff;
+}
+
+.attach-resume .resume-form input::placeholder,
+.attach-resume .bottom-form input::placeholder,
+.footer-form .resume-form input::placeholder,
+.footer-form .bottom-form input::placeholder {
+  color: #999999;
+}
+
+.attach-resume .resume-form .send-cv,
+.attach-resume .bottom-form .send-cv,
+.footer-form .resume-form .send-cv,
+.footer-form .bottom-form .send-cv {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  border: 1px solid #006AFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: transparent;
+  transition: .3s;
+  width: auto;
+}
+
+.attach-resume .resume-form .send-cv:hover,
+.attach-resume .bottom-form .send-cv:hover,
+.footer-form .resume-form .send-cv:hover,
+.footer-form .bottom-form .send-cv:hover {
+  background-color: #0055CC;
+  border-color: #0055CC;
+}
+
+.attach-resume .resume-form .resume-add_cv,
+.attach-resume .bottom-form .resume-add_cv,
+.footer-form .resume-form .resume-add_cv,
+.footer-form .bottom-form .resume-add_cv {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.attach-resume .resume-form .resume-add_cv + label,
+.attach-resume .bottom-form .resume-add_cv + label,
+.footer-form .resume-form .resume-add_cv + label,
+.footer-form .bottom-form .resume-add_cv + label {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  color: #fff;
+  width: 100%;
+  border: 1px dashed #fff;
+  display: flex;
+  transition: .3s;
+  outline: none;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.attach-resume .resume-form .resume-add_cv + label i,
+.attach-resume .bottom-form .resume-add_cv + label i,
+.footer-form .resume-form .resume-add_cv + label i,
+.footer-form .bottom-form .resume-add_cv + label i {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+}
+
+.attach-resume .resume-form .resume-add_cv + label:hover,
+.attach-resume .bottom-form .resume-add_cv + label:hover,
+.footer-form .resume-form .resume-add_cv + label:hover,
+.footer-form .bottom-form .resume-add_cv + label:hover {
+  background-color: #fff;
+  color: #000;
+  outline: none;
+}
+
+.attach-resume .resume-form .resume-add_cv + label:hover i,
+.attach-resume .bottom-form .resume-add_cv + label:hover i,
+.footer-form .resume-form .resume-add_cv + label:hover i,
+.footer-form .bottom-form .resume-add_cv + label:hover i {
+  color: #006AFF;
+}
+
+.attach-resume .resume-form .resume-add_cv + label,
+.attach-resume .bottom-form .resume-add_cv + label,
+.footer-form .resume-form .resume-add_cv + label,
+.footer-form .bottom-form .resume-add_cv + label {
+  cursor: pointer;
+}
+
+.attach-resume .resume-form .resume-add_cv:focus + label,
+.attach-resume .resume-form .resume-add_cv.has-focus + label,
+.attach-resume .bottom-form .resume-add_cv:focus + label,
+.attach-resume .bottom-form .resume-add_cv.has-focus + label,
+.footer-form .resume-form .resume-add_cv:focus + label,
+.footer-form .resume-form .resume-add_cv.has-focus + label,
+.footer-form .bottom-form .resume-add_cv:focus + label,
+.footer-form .bottom-form .resume-add_cv.has-focus + label {
+  border-color: #fff;
+}
+
+.attach-resume .resume-form .resume-cv_label,
+.attach-resume .bottom-form .resume-cv_label,
+.footer-form .resume-form .resume-cv_label,
+.footer-form .bottom-form .resume-cv_label {
+  margin-bottom: 24px;
+}
+
 .attach-resume {
   color: #fff;
 }
@@ -9947,100 +10009,6 @@ a.text-dark:focus {
   margin-bottom: 24px;
   padding-left: 12px;
   padding-right: 12px;
-}
-
-.attach-resume .resume-form input,
-.attach-resume .resume-form textarea,
-.attach-resume .resume-form select {
-  width: 100%;
-  margin-bottom: 12px;
-}
-
-.attach-resume .resume-form input,
-.attach-resume .resume-form textarea {
-  padding: 12px;
-  font-size: 15px;
-  line-height: 17px;
-  color: #999999;
-  border-radius: 6px;
-  height: auto;
-  border: 1px solid #fff;
-}
-
-.attach-resume .resume-form input::placeholder {
-  color: #999999;
-}
-
-.attach-resume .resume-form .send-cv {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 17px;
-  border: 1px solid #006AFF;
-  box-sizing: border-box;
-  border-radius: 6px;
-  padding: 10px 20px;
-  color: #fff;
-  background-color: transparent;
-  transition: .3s;
-  width: auto;
-}
-
-.attach-resume .resume-form .send-cv:hover {
-  background-color: #0055CC;
-  border-color: #0055CC;
-}
-
-.attach-resume .resume-form .resume-add_cv {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-
-.attach-resume .resume-form .resume-add_cv + label {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 17px;
-  color: #fff;
-  width: 100%;
-  border: 1px dashed #fff;
-  display: flex;
-  transition: .3s;
-  outline: none;
-  border-radius: 6px;
-  padding: 12px;
-}
-
-.attach-resume .resume-form .resume-add_cv + label i {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  margin-right: 5px;
-}
-
-.attach-resume .resume-form .resume-add_cv + label:hover {
-  background-color: #fff;
-  color: #000;
-  outline: none;
-}
-
-.attach-resume .resume-form .resume-add_cv + label:hover i {
-  color: #006AFF;
-}
-
-.attach-resume .resume-form .resume-add_cv + label {
-  cursor: pointer;
-}
-
-.attach-resume .resume-form .resume-add_cv:focus + label,
-.attach-resume .resume-form .resume-add_cv.has-focus + label {
-  border-color: #fff;
-}
-
-.attach-resume .resume-form .resume-cv_label {
-  margin-bottom: 24px;
 }
 
 .inside-the-company {
@@ -10213,6 +10181,77 @@ a.text-dark:focus {
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 24px;
+}
+
+.first-about.partner-page {
+  height: auto;
+}
+
+.first-about.partner-page .title-block {
+  text-align: left;
+  margin-bottom: 8px;
+  padding-top: 10px;
+}
+
+.first-about.partner-page p {
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.partner-benefits {
+  padding-top: 24px;
+}
+
+.partner-benefits .partner-ben_item {
+  padding-top: 8px;
+  margin-bottom: 12px;
+  border-top: 2px solid #006AFF;
+}
+
+.partner-benefits .partner-ben_item h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.partner-benefits .partner-ben_item p {
+  color: #4D4D4D;
+  margin-bottom: 0px;
+}
+
+.about-partnership {
+  padding-bottom: 24px;
+}
+
+.about-partnership h3 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.about-partnership p {
+  color: #4D4D4D;
+}
+
+.about-partnership .partner-img_wrapp {
+  margin-bottom: 10px;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.main-content .footer-form .resume-add_cv + label {
+  background-color: #fff;
+  color: #000;
+  outline: none;
+  border: none;
+}
+
+.main-content .footer-form .resume-add_cv + label i {
+  color: #006AFF;
 }
 
 .breadcrumbs {
@@ -11322,6 +11361,91 @@ input[type="search"]::-webkit-search-results-decoration {
 .register-wrapp .success-pass_row img,
 .register-wrapp .acc-success img {
   margin-bottom: 24px;
+}
+
+.footer-form .title-block {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-form .block-form {
+  background-size: cover;
+  border-radius: 6px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer-form .bottom-form input,
+.footer-form .bottom-form textarea,
+.footer-form .bottom-form select {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.footer-form .bottom-form input,
+.footer-form .bottom-form textarea {
+  padding: 12px;
+  font-size: 15px;
+  line-height: 17px;
+  color: #999999;
+  border-radius: 6px;
+  height: auto;
+  border: 1px solid #fff;
+}
+
+.footer-form .bottom-form input::placeholder {
+  color: #999999;
+}
+
+.footer-form .bottom-form textarea {
+  resize: none;
+}
+
+.footer-form .bottom-form textarea:focus {
+  outline: none;
+}
+
+.footer-form .footer-form_btn {
+  padding: 14px 24px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  border-radius: 6px;
+  transition: .3s;
+  align-self: flex-end;
+}
+
+.footer-form .footer-form_btn:hover {
+  background-color: #fff;
+}
+
+.footer-form .nice-select {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  line-height: 17px;
+  color: #999999;
+  border-radius: 6px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.footer-form .nice-select.open .list {
+  width: 100%;
+}
+
+.footer-form .nice-select.open .list li:first-child {
+  display: none;
+}
+
+.footer-form .nice-select.open .list li:not(:first-child) {
+  padding: 14px 24px;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 6px;
+  height: auto;
 }
 
 .modal-active,
@@ -15537,6 +15661,10 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-right: 20px;
   }
 
+  .first-about.partner-page {
+    height: 300px;
+  }
+
   .breadcrumbs .sticky-nav_list li:last-child {
     margin-left: auto;
   }
@@ -18896,15 +19024,18 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-bottom: 48px;
   }
 
-  .attach-resume .attach-resume_rowcust {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-
-  .attach-resume .resume-form .send-cv {
+  .attach-resume .resume-form .send-cv,
+  .attach-resume .bottom-form .send-cv,
+  .footer-form .resume-form .send-cv,
+  .footer-form .bottom-form .send-cv {
     padding: 14px 24px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  .attach-resume .attach-resume_rowcust {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .inside-the-company {
@@ -18945,6 +19076,43 @@ input[type="search"]::-webkit-search-results-decoration {
   #career-news.info-block .news-title_link {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .first-about.partner-page {
+    height: 450px;
+  }
+
+  .first-about.partner-page .title-block {
+    margin-bottom: 16px;
+    padding-top: 0;
+  }
+
+  .partner-benefits {
+    padding-top: 48px;
+  }
+
+  .partner-benefits {
+    padding-top: 72px;
+  }
+
+  .partner-benefits .partner-ben_item {
+    margin-bottom: 48px;
+    padding-top: 18px;
+    margin-bottom: 24px;
+  }
+
+  .partner-benefits .partner-ben_item {
+    margin-bottom: 72px;
+  }
+
+  .about-partnership {
+    padding-bottom: 48px;
+  }
+
+  .about-partnership h3 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .breadcrumbs .sticky-nav_list li a {
@@ -20320,35 +20488,6 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-right: 72px;
   }
 
-  .footer-form .title-block {
-    margin-bottom: 24px;
-  }
-
-  .footer-form .block-form {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-
-  .footer-form .bottom-form input,
-  .footer-form .bottom-form textarea,
-  .footer-form .bottom-form select {
-    margin-bottom: 24px;
-  }
-
-  .footer-form .bottom-form input,
-  .footer-form .bottom-form textarea {
-    padding: 14px 24px;
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-  .footer-form .nice-select {
-    padding: 14px 24px;
-    margin-bottom: 24px;
-    font-size: 16px;
-    line-height: 18px;
-  }
-
   .breadcrumbs.ak06-product .sticky-nav_list li:not(:last-child):hover:before {
     background-color: #FF7F00;
   }
@@ -20781,6 +20920,43 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 32px;
   }
 
+  .attach-resume .resume-form input,
+  .attach-resume .resume-form textarea,
+  .attach-resume .resume-form select,
+  .attach-resume .bottom-form input,
+  .attach-resume .bottom-form textarea,
+  .attach-resume .bottom-form select,
+  .footer-form .resume-form input,
+  .footer-form .resume-form textarea,
+  .footer-form .resume-form select,
+  .footer-form .bottom-form input,
+  .footer-form .bottom-form textarea,
+  .footer-form .bottom-form select {
+    margin-bottom: 24px;
+  }
+
+  .attach-resume .resume-form input,
+  .attach-resume .resume-form textarea,
+  .attach-resume .bottom-form input,
+  .attach-resume .bottom-form textarea,
+  .footer-form .resume-form input,
+  .footer-form .resume-form textarea,
+  .footer-form .bottom-form input,
+  .footer-form .bottom-form textarea {
+    padding: 14px 24px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .attach-resume .resume-form .resume-add_cv + label,
+  .attach-resume .bottom-form .resume-add_cv + label,
+  .footer-form .resume-form .resume-add_cv + label,
+  .footer-form .bottom-form .resume-add_cv + label {
+    padding: 14px 24px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   .attach-resume .attach-resume_rowcust {
     padding-top: 72px;
     padding-bottom: 72px;
@@ -20792,25 +20968,6 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-right: 0;
   }
 
-  .attach-resume .resume-form input,
-  .attach-resume .resume-form textarea,
-  .attach-resume .resume-form select {
-    margin-bottom: 24px;
-  }
-
-  .attach-resume .resume-form input,
-  .attach-resume .resume-form textarea {
-    padding: 14px 24px;
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-  .attach-resume .resume-form .resume-add_cv + label {
-    padding: 14px 24px;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
   .inside-the-company {
     padding-bottom: 72px;
   }
@@ -20819,6 +20976,14 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 12px;
+  }
+
+  .first-about.partner-page {
+    height: 782px;
+  }
+
+  .about-partnership {
+    padding-bottom: 72px;
   }
 
   .breadcrumbs {
@@ -20981,6 +21146,35 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .register-wrapp form .reg-form_footer {
     flex-direction: row;
+  }
+
+  .footer-form .title-block {
+    margin-bottom: 24px;
+  }
+
+  .footer-form .block-form {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .footer-form .bottom-form input,
+  .footer-form .bottom-form textarea,
+  .footer-form .bottom-form select {
+    margin-bottom: 24px;
+  }
+
+  .footer-form .bottom-form input,
+  .footer-form .bottom-form textarea {
+    padding: 14px 24px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .footer-form .nice-select {
+    padding: 14px 24px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .footer-modal .footer-contus textarea.contus-comment,
