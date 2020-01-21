@@ -118,7 +118,8 @@ $('.jobs-list_tags li').click(function () {
 $('.job-item').click(function () {
   $(this).toggleClass('active-job_item');
   $(this).next().toggle();
-});
+}); // attach cv
+
 ;
 
 (function ($, window, document, undefined) {
@@ -130,15 +131,46 @@ $('.job-item').click(function () {
       var fileName = '';
       if (this.files && this.files.length > 1) fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);else if (e.target.value) fileName = e.target.value.split('\\').pop();
       if (fileName) $label.find('span').html(fileName);else $label.html(labelVal);
-    }); // Firefox bug fix
-
+    });
     $input.on('focus', function () {
       $input.addClass('has-focus');
     }).on('blur', function () {
       $input.removeClass('has-focus');
     });
   });
-})(jQuery, window, document);
+})(jQuery, window, document); // attach cv end 
+
+
+$('.slider-career').slick({
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  prevArrow: $('.prev-slide'),
+  nextArrow: $('.next-slide'),
+  responsive: [{
+    breakpoint: 992,
+    settings: {
+      dots: false,
+      arrows: false,
+      prevArrow: false,
+      nextArrow: false
+    }
+  }]
+});
+$('.slider-success').slick({
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  dots: false,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 3000
+});
 
 /***/ }),
 
@@ -231,6 +263,15 @@ $(document).ready(function () {
       }
     }
   });
+  $('#resume-add_cv').change(function () {
+    if ($(this).attr('required')) {
+      if ($('#resume-add_cv').is(":invalid")) {
+        $('.resume-cv_label').css('border-color', '#dc3545');
+      } else if ($('#resume-add_cv').is(":valid")) {
+        $('.resume-cv_label').css('border-color', '#28a745');
+      }
+    }
+  });
   $('.form-validation').submit(function (event) {
     var $form = $(this);
     event.preventDefault();
@@ -243,7 +284,15 @@ $(document).ready(function () {
         $('.was-validated input[type=checkbox].form-control + label').removeClass('req-input');
       } else {
         $('.was-validated input[type=checkbox].form-control + label').addClass('req-input');
-      }
+      } // Attach your CV
+
+
+      if ($('#resume-add_cv').is(":invalid")) {
+        $('.resume-cv_label').css('border-color', '#dc3545');
+      } else if ($('#resume-add_cv').is(":valid")) {
+        $('.resume-cv_label').css('border-color', '#28a745');
+      } // Attach your CV end
+
     } else {
       $.ajax({
         type: $form.attr('method'),
