@@ -9978,11 +9978,11 @@ a.text-dark:focus {
   margin-bottom: 8px;
 }
 
-.jobs-list .job-content .job-content_list {
+.jobs-list .job-content ul {
   margin-bottom: 24px;
 }
 
-.jobs-list .job-content .job-content_list li {
+.jobs-list .job-content ul li {
   font-size: 15px;
   line-height: 22px;
   margin-bottom: 12px;
@@ -9991,7 +9991,7 @@ a.text-dark:focus {
   position: relative;
 }
 
-.jobs-list .job-content .job-content_list li:before {
+.jobs-list .job-content ul li:before {
   content: '';
   width: 5px;
   height: 5px;
@@ -10002,7 +10002,7 @@ a.text-dark:focus {
   position: absolute;
 }
 
-.jobs-list .job-content .job-content_list ul {
+.jobs-list .job-content ul ul {
   padding-left: 10px;
   margin-top: 12px;
 }
@@ -21131,16 +21131,16 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 80px;
   }
 
-  .jobs-list .job-content .job-content_list {
+  .jobs-list .job-content ul {
     margin-bottom: 48px;
   }
 
-  .jobs-list .job-content .job-content_list li {
+  .jobs-list .job-content ul li {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .jobs-list .job-content .job-content_list ul {
+  .jobs-list .job-content ul ul {
     padding-left: 20px;
   }
 
