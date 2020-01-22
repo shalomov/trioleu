@@ -9720,13 +9720,13 @@ a.text-dark:focus {
   margin-bottom: 24px;
 }
 
-.main-content .block-about .block-about_list {
+.main-content .block-about ul {
   list-style-type: disc;
   list-style: inside;
   margin-bottom: 12px;
 }
 
-.main-content .block-about .block-about_list li {
+.main-content .block-about ul li {
   font-size: 15px;
   line-height: 20px;
   margin-bottom: 6px;
@@ -9860,12 +9860,12 @@ a.text-dark:focus {
   padding-bottom: 24px;
 }
 
-.our-jobs .jobs-list_tags {
+.our-jobs ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-.our-jobs .jobs-list_tags li {
+.our-jobs ul li {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -9878,11 +9878,11 @@ a.text-dark:focus {
   cursor: pointer;
 }
 
-.our-jobs .jobs-list_tags li:not(:last-child) {
+.our-jobs ul li:not(:last-child) {
   margin-right: 8px;
 }
 
-.our-jobs .jobs-list_tags li.active-position {
+.our-jobs ul li.active-position {
   border-color: #006AFF;
   color: #006AFF;
 }
@@ -10316,6 +10316,11 @@ a.text-dark:focus {
 .slider-career_wrapp .slick-dots li button {
   height: 4px;
   padding: 0;
+}
+
+.slider-career_wrapp .slick-dots li button:before {
+  height: 4px;
+  opacity: 0;
 }
 
 .slick-slide:focus {
@@ -21068,13 +21073,13 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 782px;
   }
 
-  .main-content .block-about .block-about_list li {
+  .main-content .block-about ul li {
     margin-bottom: 12px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .main-content .block-about .block-about_list {
+  .main-content .block-about ul {
     margin-bottom: 24px;
   }
 
@@ -21102,12 +21107,12 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-bottom: 48px;
   }
 
-  .our-jobs .jobs-list_tags li {
+  .our-jobs ul li {
     padding: 12px 24px;
     margin-bottom: 24px;
   }
 
-  .our-jobs .jobs-list_tags li:not(:last-child) {
+  .our-jobs ul li:not(:last-child) {
     margin-right: 16px;
   }
 
