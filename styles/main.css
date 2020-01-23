@@ -9860,12 +9860,12 @@ a.text-dark:focus {
   padding-bottom: 24px;
 }
 
-.our-jobs ul {
+.our-jobs .direction-jobs ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-.our-jobs ul li {
+.our-jobs .direction-jobs ul li {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -9878,11 +9878,11 @@ a.text-dark:focus {
   cursor: pointer;
 }
 
-.our-jobs ul li:not(:last-child) {
+.our-jobs .direction-jobs ul li:not(:last-child) {
   margin-right: 8px;
 }
 
-.our-jobs ul li.active-position {
+.our-jobs .direction-jobs ul li.active-position {
   border-color: #006AFF;
   color: #006AFF;
 }
@@ -9978,11 +9978,11 @@ a.text-dark:focus {
   margin-bottom: 8px;
 }
 
-.jobs-list .job-content ul {
+.jobs-list .job-content .job-content_list {
   margin-bottom: 24px;
 }
 
-.jobs-list .job-content ul li {
+.jobs-list .job-content .job-content_list li {
   font-size: 15px;
   line-height: 22px;
   margin-bottom: 12px;
@@ -9991,7 +9991,7 @@ a.text-dark:focus {
   position: relative;
 }
 
-.jobs-list .job-content ul li:before {
+.jobs-list .job-content .job-content_list li:before {
   content: '';
   width: 5px;
   height: 5px;
@@ -10002,7 +10002,7 @@ a.text-dark:focus {
   position: absolute;
 }
 
-.jobs-list .job-content ul ul {
+.jobs-list .job-content .job-content_list ul {
   padding-left: 10px;
   margin-top: 12px;
 }
@@ -10316,11 +10316,6 @@ a.text-dark:focus {
 .slider-career_wrapp .slick-dots li button {
   height: 4px;
   padding: 0;
-}
-
-.slider-career_wrapp .slick-dots li button:before {
-  height: 4px;
-  opacity: 0;
 }
 
 .slick-slide:focus {
@@ -11554,7 +11549,8 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-bottom: 24px;
 }
 
-.main-content .footer-form_btn {
+.main-content .footer-form_btn,
+.main-wrapp .footer-form_btn {
   padding: 14px 24px;
   color: #fff;
   font-weight: 500;
@@ -11566,16 +11562,19 @@ input[type="search"]::-webkit-search-results-decoration {
   align-self: flex-end;
 }
 
-.main-content .footer-form_btn:hover {
+.main-content .footer-form_btn:hover,
+.main-wrapp .footer-form_btn:hover {
   background-color: #fff;
 }
 
-.main-content .footer-form .title-block {
+.main-content .footer-form .title-block,
+.main-wrapp .footer-form .title-block {
   color: #fff;
   margin-bottom: 16px;
 }
 
-.main-content .footer-form .block-form {
+.main-content .footer-form .block-form,
+.main-wrapp .footer-form .block-form {
   background-size: cover;
   border-radius: 6px;
   padding-top: 24px;
@@ -11584,13 +11583,18 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .main-content .footer-form .bottom-form input,
 .main-content .footer-form .bottom-form textarea,
-.main-content .footer-form .bottom-form select {
+.main-content .footer-form .bottom-form select,
+.main-wrapp .footer-form .bottom-form input,
+.main-wrapp .footer-form .bottom-form textarea,
+.main-wrapp .footer-form .bottom-form select {
   width: 100%;
   margin-bottom: 12px;
 }
 
 .main-content .footer-form .bottom-form input,
-.main-content .footer-form .bottom-form textarea {
+.main-content .footer-form .bottom-form textarea,
+.main-wrapp .footer-form .bottom-form input,
+.main-wrapp .footer-form .bottom-form textarea {
   padding: 12px;
   font-size: 15px;
   line-height: 17px;
@@ -11599,19 +11603,23 @@ input[type="search"]::-webkit-search-results-decoration {
   height: auto;
 }
 
-.main-content .footer-form .bottom-form input::placeholder {
+.main-content .footer-form .bottom-form input::placeholder,
+.main-wrapp .footer-form .bottom-form input::placeholder {
   color: #999999;
 }
 
-.main-content .footer-form .bottom-form textarea {
+.main-content .footer-form .bottom-form textarea,
+.main-wrapp .footer-form .bottom-form textarea {
   resize: none;
 }
 
-.main-content .footer-form .bottom-form textarea:focus {
+.main-content .footer-form .bottom-form textarea:focus,
+.main-wrapp .footer-form .bottom-form textarea:focus {
   outline: none;
 }
 
-.main-content .footer-form .nice-select {
+.main-content .footer-form .nice-select,
+.main-wrapp .footer-form .nice-select {
   width: 100%;
   padding: 12px;
   font-size: 15px;
@@ -11622,15 +11630,18 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-bottom: 12px;
 }
 
-.main-content .footer-form .nice-select.open .list {
+.main-content .footer-form .nice-select.open .list,
+.main-wrapp .footer-form .nice-select.open .list {
   width: 100%;
 }
 
-.main-content .footer-form .nice-select.open .list li:first-child {
+.main-content .footer-form .nice-select.open .list li:first-child,
+.main-wrapp .footer-form .nice-select.open .list li:first-child {
   display: none;
 }
 
-.main-content .footer-form .nice-select.open .list li:not(:first-child) {
+.main-content .footer-form .nice-select.open .list li:not(:first-child),
+.main-wrapp .footer-form .nice-select.open .list li:not(:first-child) {
   padding: 14px 24px;
   font-size: 16px;
   line-height: 18px;
@@ -21107,12 +21118,12 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-bottom: 48px;
   }
 
-  .our-jobs ul li {
+  .our-jobs .direction-jobs ul li {
     padding: 12px 24px;
     margin-bottom: 24px;
   }
 
-  .our-jobs ul li:not(:last-child) {
+  .our-jobs .direction-jobs ul li:not(:last-child) {
     margin-right: 16px;
   }
 
@@ -21131,16 +21142,16 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 80px;
   }
 
-  .jobs-list .job-content ul {
+  .jobs-list .job-content .job-content_list {
     margin-bottom: 48px;
   }
 
-  .jobs-list .job-content ul li {
+  .jobs-list .job-content .job-content_list li {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .jobs-list .job-content ul ul {
+  .jobs-list .job-content .job-content_list ul {
     padding-left: 20px;
   }
 
@@ -21428,29 +21439,37 @@ input[type="search"]::-webkit-search-results-decoration {
     flex-direction: row;
   }
 
-  .main-content .footer-form .title-block {
+  .main-content .footer-form .title-block,
+  .main-wrapp .footer-form .title-block {
     margin-bottom: 24px;
   }
 
-  .main-content .footer-form .block-form {
+  .main-content .footer-form .block-form,
+  .main-wrapp .footer-form .block-form {
     padding-top: 48px;
     padding-bottom: 48px;
   }
 
   .main-content .footer-form .bottom-form input,
   .main-content .footer-form .bottom-form textarea,
-  .main-content .footer-form .bottom-form select {
+  .main-content .footer-form .bottom-form select,
+  .main-wrapp .footer-form .bottom-form input,
+  .main-wrapp .footer-form .bottom-form textarea,
+  .main-wrapp .footer-form .bottom-form select {
     margin-bottom: 24px;
   }
 
   .main-content .footer-form .bottom-form input,
-  .main-content .footer-form .bottom-form textarea {
+  .main-content .footer-form .bottom-form textarea,
+  .main-wrapp .footer-form .bottom-form input,
+  .main-wrapp .footer-form .bottom-form textarea {
     padding: 14px 24px;
     font-size: 16px;
     line-height: 18px;
   }
 
-  .main-content .footer-form .nice-select {
+  .main-content .footer-form .nice-select,
+  .main-wrapp .footer-form .nice-select {
     padding: 14px 24px;
     margin-bottom: 24px;
     font-size: 16px;
