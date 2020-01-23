@@ -10061,6 +10061,10 @@ a.text-dark:focus {
   line-height: 28px;
 }
 
+.success-stories {
+  padding-bottom: 48px;
+}
+
 .attach-resume .resume-form input,
 .attach-resume .resume-form textarea,
 .attach-resume .resume-form select,
@@ -10385,6 +10389,7 @@ a.text-dark:focus {
 
 #career-news.info-block {
   padding-bottom: 0;
+  padding-top: 24px;
 }
 
 #career-news.info-block .title-block {
@@ -21116,7 +21121,6 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .our-jobs {
-    padding-top: 48px;
     padding-bottom: 48px;
   }
 
@@ -21519,7 +21523,7 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .our-jobs {
-    padding-top: 72px;
+    padding-top: 48px;
     padding-bottom: 72px;
   }
 
