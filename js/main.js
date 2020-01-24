@@ -253,6 +253,23 @@ $(document).ready(function () {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/faq/faq.js":
+/*!***************************************!*\
+  !*** ./src/blocks/modules/faq/faq.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$('.faq-title').click(function () {
+  if ($(this).next('.faq-content').is(":visible")) {
+    $(this).removeClass('active-faq');
+  } else if ($(this).next('.faq-content').is(":hidden")) {
+    $(this).addClass('active-faq');
+  }
+});
+
+/***/ }),
+
 /***/ "./src/blocks/modules/footer/footer.js":
 /*!*********************************************!*\
   !*** ./src/blocks/modules/footer/footer.js ***!
@@ -705,8 +722,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_career_career__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_career_career__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _modules_patents_patents__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/patents/patents */ "./src/blocks/modules/patents/patents.js");
 /* harmony import */ var _modules_patents_patents__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_patents_patents__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _modules_faq_faq__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/faq/faq */ "./src/blocks/modules/faq/faq.js");
+/* harmony import */ var _modules_faq_faq__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_faq_faq__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_10__);
+
 
 
 
