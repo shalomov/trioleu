@@ -111,35 +111,39 @@ $('.about-info_tabs a').click(function (e) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$('.jobs-list_tags li').click(function () {
-  $('.jobs-list_tags li').removeClass('active-position');
+$('.direction-jobs ul li').click(function () {
+  $('.direction-jobs ul li').removeClass('active-position');
   $(this).addClass('active-position');
 });
 $('.job-item').click(function () {
   $(this).toggleClass('active-job_item');
   $(this).next().toggle();
 }); // attach cv
-
-;
-
-(function ($, window, document, undefined) {
-  $('.resume-add_cv').each(function () {
-    var $input = $(this),
-        $label = $input.next('label'),
-        labelVal = $label.html();
-    $input.on('change', function (e) {
-      var fileName = '';
-      if (this.files && this.files.length > 1) fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);else if (e.target.value) fileName = e.target.value.split('\\').pop();
-      if (fileName) $label.find('span').html(fileName);else $label.html(labelVal);
-    });
-    $input.on('focus', function () {
-      $input.addClass('has-focus');
-    }).on('blur', function () {
-      $input.removeClass('has-focus');
-    });
-  });
-})(jQuery, window, document); // attach cv end 
-
+// ;( function( $, window, document, undefined )
+// {
+// 	$( '.resume-add_cv' ).each( function()
+// 	{
+// 		var $input	 = $( this ),
+// 			$label	 = $input.next( 'label' ),
+// 			labelVal = $label.html();
+// 		$input.on( 'change', function( e )
+// 		{
+// 			var fileName = '';
+// 			if( this.files && this.files.length > 1 )
+// 				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+// 			else if( e.target.value )
+// 				fileName = e.target.value.split( '\\' ).pop();
+// 			if( fileName )
+// 				$label.find( 'span' ).html( fileName );
+// 			else
+// 				$label.html( labelVal );
+// 		});
+// 		$input
+// 		.on( 'focus', function(){ $input.addClass( 'has-focus' ); })
+// 		.on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
+// 	});
+// })( jQuery, window, document );
+// attach cv end 
 
 $('.slider-career').slick({
   infinite: true,
@@ -195,7 +199,11 @@ $('.cont-modal').click(function (e) {
   var authorName = target.siblings('h3').text();
   $('.contacts-modal .message-to').text(authorName);
   $('body').addClass('cont-modal-active');
-  $('.contacts-modal').fadeIn();
+  $('.contacts-modal').fadeIn(); // hidden input
+
+  $('#fperson').val($(this).closest('.contact-item_tabs').find('.person-email').val());
+  $('#fperson_email').val(authorName); // hidden input end
+
   $(document).mouseup(function (e) {
     var div = $(".contacts-modal_wrapp");
 
@@ -347,16 +355,19 @@ $('.burger-toggle').click(function () {
 });
 $('.search-btn').click(function () {
   $('.overlay').css('display', 'flex');
+  $('body').addClass('search-modal-active');
 });
 $('.clear-img').click(function () {
   $('.overlay').css('display', 'none');
   $('.search-form')[0].reset();
+  $('body').removeClass('search-modal-active');
 });
 $(document).mouseup(function (e) {
   var div = $(".search-wrapp");
 
   if (!div.is(e.target) && div.has(e.target).length === 0) {
     $('.overlay').css('display', 'none');
+    $('body').removeClass('search-modal-active');
   }
 }); // $('.login-btn').click(function(){
 //     $('.login-wrapp').slideToggle(200);
@@ -605,6 +616,23 @@ $(document).ready(function () {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/patents/patents.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/modules/patents/patents.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$('.patent-tabs li').click(function () {
+  var tab_id = $(this).attr('data-tab');
+  $('.patent-tabs li').removeClass('current');
+  $('.patent-tab_content').removeClass('current');
+  $(this).addClass('current');
+  $("#" + tab_id).addClass('current');
+});
+
+/***/ }),
+
 /***/ "./src/blocks/modules/product/product.js":
 /*!***********************************************!*\
   !*** ./src/blocks/modules/product/product.js ***!
@@ -676,8 +704,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _modules_career_career__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/career/career */ "./src/blocks/modules/career/career.js");
 /* harmony import */ var _modules_career_career__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_career_career__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_patents_patents__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/patents/patents */ "./src/blocks/modules/patents/patents.js");
+/* harmony import */ var _modules_patents_patents__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_patents_patents__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_9__);
+
 
 
 

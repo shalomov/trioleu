@@ -8154,12 +8154,12 @@ a.text-dark:focus {
   overflow-x: auto;
 }
 
-.benefits {
-  padding: 24px 0;
+.custom-wrapp_table table {
+  width: 100%;
 }
 
-.benefits table {
-  width: 100%;
+.benefits {
+  padding: 24px 0;
 }
 
 .benefits table tr:not(:last-child) {
@@ -8842,7 +8842,8 @@ a.text-dark:focus {
   padding-bottom: 20px;
 }
 
-.doc-page p {
+.doc-page p,
+.patent-page p {
   font-size: 16px;
   line-height: 22px;
   color: #4D4D4D;
@@ -8874,16 +8875,17 @@ a.text-dark:focus {
   border-color: #0055FF;
 }
 
-.tabs-wrapp .doc-tabs {
+.tabs-wrapp .doc-tabs,
+.tabs-wrapp .patent-tabs {
   display: flex;
   flex-flow: column wrap;
   padding-left: 0;
   justify-content: space-around;
   border-color: transparent;
-  margin-bottom: 24px;
 }
 
-.tabs-wrapp .doc-tabs li {
+.tabs-wrapp .doc-tabs li,
+.tabs-wrapp .patent-tabs li {
   display: flex;
   padding: 10px 10px;
   cursor: pointer;
@@ -8895,16 +8897,19 @@ a.text-dark:focus {
   line-height: 24px;
 }
 
-.tabs-wrapp .doc-tabs li.current {
+.tabs-wrapp .doc-tabs li.current,
+.tabs-wrapp .patent-tabs li.current {
   border-bottom: 2px solid #006AFF;
   color: #000000;
 }
 
-.doc-tab_content {
+.doc-tab_content,
+.patent-tab_content {
   display: none;
 }
 
-.doc-tab_content.current {
+.doc-tab_content.current,
+.patent-tab_content.current {
   display: inherit;
   background-color: #fff;
   position: relative;
@@ -9529,11 +9534,11 @@ a.text-dark:focus {
   background-color: #0055CC;
 }
 
-.contacts .contact-item {
+.contact-item {
   margin-bottom: 10px;
 }
 
-.contacts .contact-item h5 {
+.contact-item h5 {
   font-weight: bold;
   font-size: 16px;
   line-height: 26px;
@@ -9541,8 +9546,8 @@ a.text-dark:focus {
   margin-bottom: 5px;
 }
 
-.contacts .contact-item p,
-.contacts .contact-item a {
+.contact-item p,
+.contact-item a {
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
@@ -9550,15 +9555,15 @@ a.text-dark:focus {
   margin-bottom: 0;
 }
 
-.contacts .contact-item .social-list {
+.contact-item .social-list {
   justify-content: flex-start;
 }
 
-.contacts .contact-item .social-list li:not(:last-child) {
+.contact-item .social-list li:not(:last-child) {
   margin-right: 7px;
 }
 
-.contacts .contact-item .social-list a {
+.contact-item .social-list a {
   font-size: 16px;
   line-height: 24px;
 }
@@ -10407,6 +10412,111 @@ a.text-dark:focus {
   margin-bottom: 24px;
 }
 
+.patent-page {
+  padding-bottom: 24px;
+}
+
+.tabs-wrapp .patent-tabs {
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.patent-desc {
+  font-family: "tacticsans-blkregular", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #818181;
+  padding: 6px 12px;
+  background-color: #F7F9FF;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.patent-tab_content table tr td {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 24px;
+  padding-top: 12px;
+}
+
+.patent-tab_content table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.patent-tab_content table tr td .patent-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.patent-tab_content table tr td p {
+  margin-bottom: 8px;
+}
+
+.patent-tab_content table tr td ul {
+  list-style-type: disc;
+  list-style: inside;
+  margin-bottom: 8px;
+}
+
+.patent-tab_content table tr td ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.patent-tab_content table tr td ul li ul {
+  padding-left: 10px;
+}
+
+.patent-tab_content table tr td h4 {
+  margin-bottom: 8px;
+}
+
+.patent-tab_content table tr td .link-more {
+  display: inline-flex;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+}
+
+.patent-tab_content table tr td .link-more i {
+  font-size: 12px;
+  margin-left: 6px;
+  line-height: 18px;
+}
+
+.patent-page.patent-single {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.patent-page .patent-desc {
+  margin-bottom: 12px;
+}
+
+.patent-page .patent-date {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+  color: #B2B2B2;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.patent-page .patents-info {
+  padding-bottom: 12px;
+}
+
+.patent-product {
+  background-color: #F8F9FC;
+}
+
 .first-about.partner-page {
   height: auto;
 }
@@ -10536,6 +10646,67 @@ a.text-dark:focus {
 
 .main-content.solutions-page {
   padding-bottom: 24px;
+}
+
+.main-content.policy-page {
+  padding-top: 16px;
+}
+
+.main-content.policy-page h3 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.main-content.policy-page p {
+  color: #4D4D4D;
+}
+
+.main-content.policy-page ol {
+  margin-bottom: 24px;
+  list-style-position: inside;
+}
+
+.main-content.policy-page ol li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4D4D4D;
+  margin-bottom: 8px;
+}
+
+.main-content.policy-page ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 24px;
+}
+
+.main-content.policy-page ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-content.policy-page a {
+  font-size: 16px;
+  line-height: 26px;
+  color: #006AFF;
+  transition: .3s;
+}
+
+.main-content.policy-page a:hover {
+  color: #0055CC;
+}
+
+.main-content.policy-page .contact-item a,
+.main-content.policy-page .contact-item p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  display: inline-block;
+  margin-bottom: 12px;
 }
 
 .main-content.solution-oilgas_page .block-about .link-more {
@@ -10972,7 +11143,7 @@ h3 {
 
 .overlay {
   width: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   height: 100%;
@@ -11656,6 +11827,7 @@ input[type="search"]::-webkit-search-results-decoration {
   height: auto;
 }
 
+.search-modal-active,
 .modal-active,
 .reg-modal-active,
 .cont-modal-active {
@@ -15869,7 +16041,7 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 300px;
   }
 
-  .contacts .contact-item .social-list li:not(:last-child) {
+  .contact-item .social-list li:not(:last-child) {
     margin-right: 20px;
   }
 
@@ -17938,7 +18110,8 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 16px;
   }
 
-  .tabs-wrapp .doc-tabs {
+  .tabs-wrapp .doc-tabs,
+  .tabs-wrapp .patent-tabs {
     flex-flow: row wrap;
     border-bottom: 1px solid #F0F2F4;
   }
@@ -19059,7 +19232,8 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-bottom: 40px;
   }
 
-  .doc-page p {
+  .doc-page p,
+  .patent-page p {
     line-height: 26px;
     margin-bottom: 24px;
   }
@@ -19072,7 +19246,8 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-top: 26px;
   }
 
-  .tabs-wrapp .doc-tabs li {
+  .tabs-wrapp .doc-tabs li,
+  .tabs-wrapp .patent-tabs li {
     font-size: 20px;
     line-height: 30px;
   }
@@ -19137,7 +19312,7 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-bottom: 48px;
   }
 
-  .contacts .contact-item {
+  .contact-item {
     margin-bottom: 0;
   }
 
@@ -19294,6 +19469,55 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 30px;
   }
 
+  .patent-page {
+    padding-bottom: 72px;
+  }
+
+  .patent-desc {
+    margin-bottom: 24px;
+  }
+
+  .patent-tab_content table tr td {
+    padding-top: 24px;
+  }
+
+  .patent-tab_content table tr td:first-child {
+    width: 80%;
+  }
+
+  .patent-tab_content table tr td:nth-child(2) {
+    width: 20%;
+  }
+
+  .patent-tab_content table tr td .patent-title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .patent-tab_content table tr td p {
+    margin-bottom: 18px;
+  }
+
+  .patent-page .patent-desc {
+    margin-bottom: 24px;
+  }
+
+  .patent-page .patent-date {
+    margin-right: 24px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .patent-page .patents-info {
+    padding-bottom: 24px;
+  }
+
+  .patent-page .patents-info {
+    padding-bottom: 48px;
+  }
+
   .first-about.partner-page {
     height: 450px;
   }
@@ -19333,6 +19557,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .solutions-list .solutions-content_wrapp p {
     margin-bottom: 24px;
+  }
+
+  .main-content.policy-page h3 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .main-content.solution-oilgas_page .solution-products,
@@ -19497,6 +19727,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 16px;
   }
 
+  .search-modal-active,
   .modal-active,
   .reg-modal-active,
   .cont-modal-active {
@@ -20901,11 +21132,8 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-top: 56px;
   }
 
-  .tabs-wrapp .doc-tabs {
-    margin-bottom: 48px;
-  }
-
-  .tabs-wrapp .doc-tabs li {
+  .tabs-wrapp .doc-tabs li,
+  .tabs-wrapp .patent-tabs li {
     padding: 0 15px 24px;
     font-size: 24px;
     line-height: 32px;
@@ -21068,8 +21296,8 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-bottom: 72px;
   }
 
-  .contacts .contact-item p,
-  .contacts .contact-item a {
+  .contact-item p,
+  .contact-item a {
     font-size: 24px;
     line-height: 32px;
   }
@@ -21250,6 +21478,14 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-bottom: 12px;
   }
 
+  .patent-tab_content table tr td {
+    padding-top: 48px;
+  }
+
+  .patent-page .patents-info {
+    padding-bottom: 72px;
+  }
+
   .first-about.partner-page {
     height: 782px;
   }
@@ -21284,6 +21520,24 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .main-content.solutions-page {
     padding-bottom: 48px;
+  }
+
+  .main-content.policy-page ol {
+    margin-bottom: 48px;
+  }
+
+  .main-content.policy-page ul {
+    margin-bottom: 48px;
+  }
+
+  .main-content.policy-page .contact-item a,
+  .main-content.policy-page .contact-item p {
+    margin-bottom: 24px;
+  }
+
+  .main-content.policy-page .contact-item a,
+  .main-content.policy-page .contact-item p {
+    margin-bottom: 48px;
   }
 
   .main-content.solution-oilgas_page .solution-subtitle {
