@@ -8842,6 +8842,18 @@ a.text-dark:focus {
   padding-bottom: 20px;
 }
 
+.doc-page .footer-form .block-form {
+  background-color: #E7E8EF;
+}
+
+.doc-page .footer-form .block-form .title-block {
+  color: #000;
+}
+
+.doc-page .doc-page_content {
+  padding-bottom: 20px;
+}
+
 .doc-page p,
 .patent-page p {
   font-size: 16px;
@@ -9789,6 +9801,14 @@ a.text-dark:focus {
   margin-bottom: 8px;
 }
 
+.programms h4 {
+  font-size: 16px;
+  line-height: 26px;
+  color: #4D4D4D;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
 .programms h3 {
   font-weight: 500;
   font-size: 20px;
@@ -9799,6 +9819,18 @@ a.text-dark:focus {
 
 .programms p {
   color: #4D4D4D;
+}
+
+.programms ul {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.programms ul li {
+  font-size: 16px;
+  line-height: 26px;
+  color: #4D4D4D;
+  margin-bottom: 5px;
 }
 
 .sup-team {
@@ -10421,6 +10453,10 @@ a.text-dark:focus {
   margin-bottom: 0;
 }
 
+.tabs-wrapp .patent-tabs li:not(:last-child) {
+  margin-right: 0;
+}
+
 .patent-desc {
   font-family: "tacticsans-blkregular", Arial, sans-serif;
   font-size: 14px;
@@ -10511,6 +10547,19 @@ a.text-dark:focus {
 
 .patent-page .patents-info {
   padding-bottom: 12px;
+}
+
+.patent-page .link-more.dwnl-pdf {
+  padding: 12px 24px;
+  border: 1px solid #006AFF;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+
+.patent-page .link-more.dwnl-pdf:hover {
+  background-color: #0055CC;
+  border-color: #0055CC;
+  color: #fff;
 }
 
 .patent-product {
@@ -19232,6 +19281,10 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-bottom: 40px;
   }
 
+  .doc-page .doc-page_content {
+    padding-bottom: 40px;
+  }
+
   .doc-page p,
   .patent-page p {
     line-height: 26px;
@@ -19471,6 +19524,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .patent-page {
     padding-bottom: 72px;
+  }
+
+  .tabs-wrapp .patent-tabs li:not(:last-child) {
+    margin-right: 48px;
   }
 
   .patent-desc {
@@ -21476,6 +21533,10 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 12px;
+  }
+
+  .tabs-wrapp .patent-tabs li:not(:last-child) {
+    margin-right: 72px;
   }
 
   .patent-tab_content table tr td {

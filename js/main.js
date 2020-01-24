@@ -201,8 +201,7 @@ $('.cont-modal').click(function (e) {
   $('body').addClass('cont-modal-active');
   $('.contacts-modal').fadeIn(); // hidden input
 
-  $('#fperson').val($(this).closest('.contact-item_tabs')).val(authorName);
-  $('#fperson_email').find('.person-email').val(); // hidden input end
+  $('#fperson_email').val($(this).closest('.contact-item_tabs').find('.person-email').val()); // hidden input end
 
   $(document).mouseup(function (e) {
     var div = $(".contacts-modal_wrapp");
