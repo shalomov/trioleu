@@ -11857,6 +11857,16 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
 }
 
+.ss-search-form__results.ss-search-form__results--visible {
+  padding: 24px 36px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 0;
+}
+
 .ss-autocomplete-result {
   padding: 12px 36px;
 }
@@ -11890,13 +11900,20 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .ss-autocomplete-result .ss-autocomplete-result__content a mark,
-.ss-autocomplete-result .ss-autocomplete-result__content a,
-.ss-autocomplete-result .ss-autocomplete-result__badge {
+.ss-autocomplete-result .ss-autocomplete-result__content a {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #000000;
   font-weight: 400;
+}
+
+.ss-autocomplete-result .ss-autocomplete-result__badge {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  font-weight: 600;
 }
 
 .ss-autocomplete-result {
