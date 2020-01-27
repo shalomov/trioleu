@@ -680,6 +680,7 @@ $(document).ready(function () {
     stickyToggle(sticky, stickyWrapper, $(window));
   });
 });
+$(".lines-tab_content table , .custom-wrapp_table table").removeAttr("style");
 
 /***/ }),
 
