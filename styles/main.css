@@ -8139,7 +8139,6 @@ a.text-dark:focus {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .certificates .certificates-list li img {
@@ -11273,6 +11272,7 @@ h3 {
   z-index: 99;
   display: none;
   justify-content: center;
+  overflow-y: auto;
 }
 
 .overlay .search-wrapp {
@@ -11847,6 +11847,78 @@ input[type="search"]::-webkit-search-results-decoration {
 .register-wrapp .success-pass_row img,
 .register-wrapp .acc-success img {
   margin-bottom: 24px;
+}
+
+.ss-search-form {
+  width: 100%;
+}
+
+.ss-search-form .ss-search-form__input {
+  position: relative;
+}
+
+.ss-autocomplete-result {
+  padding: 12px 36px;
+}
+
+.ss-autocomplete-result hr {
+  display: none;
+}
+
+.ss-autocomplete-result .ss-autocomplete-result__title {
+  margin-bottom: 0;
+}
+
+.ss-autocomplete-result .ss-autocomplete-result__title a {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.ss-autocomplete-result .ss-autocomplete-result__badge {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.ss-autocomplete-result .ss-autocomplete-result__aside {
+  display: none;
+}
+
+.ss-autocomplete-result .ss-autocomplete-result__content a mark,
+.ss-autocomplete-result .ss-autocomplete-result__content a,
+.ss-autocomplete-result .ss-autocomplete-result__badge {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  font-weight: 400;
+}
+
+.ss-autocomplete-result {
+  transition: .3s;
+}
+
+.ss-autocomplete-result:hover {
+  background-color: #006AFF;
+}
+
+.ss-autocomplete-result:hover .ss-autocomplete-result__content a mark,
+.ss-autocomplete-result:hover .ss-autocomplete-result__content a,
+.ss-autocomplete-result:hover .ss-autocomplete-result__badge {
+  color: #fff;
+}
+
+.ss-autocomplete-result:hover .ss-autocomplete-result__badge {
+  color: #fff;
+}
+
+.ss-autocomplete-result:hover .ss-autocomplete-result__title {
+  color: #fff;
 }
 
 .main-content .footer-form_btn,
