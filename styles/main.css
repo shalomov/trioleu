@@ -8319,8 +8319,8 @@ a.text-dark:focus {
   width: 100%;
 }
 
-.options-info table tr:first-child td,
-.specifications table tr:first-child td {
+.options-info table thead th,
+.specifications table thead th {
   background-color: #000;
   font-weight: bold;
   font-size: 15px;
@@ -8330,20 +8330,20 @@ a.text-dark:focus {
   border: 1px solid #fff;
 }
 
-.options-info table tr:first-child td:first-child,
-.specifications table tr:first-child td:first-child {
+.options-info table > tbody tr:first-child td,
+.specifications table > tbody tr:first-child td {
+  background-color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 12px;
+  border: 1px solid #fff;
+}
+
+.options-info table > tbody tr:first-child td:first-child,
+.specifications table > tbody tr:first-child td:first-child {
   color: #fff;
-}
-
-.options-info table tr th,
-.specifications table tr th {
-  background-color: #000;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 20px;
-  color: #FFFFFF;
-  padding: 12px;
-  border: 1px solid #fff;
 }
 
 .options-info table tr td,
@@ -11613,6 +11613,16 @@ h3 {
 .login-wrapp .social-login .social-list li a {
   padding-left: 0;
   padding-right: 0;
+  transition: .3s;
+  display: inline-block;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.login-wrapp .social-login .social-list li a:hover {
+  opacity: .7;
+  color: #000;
 }
 
 .login-wrapp .social-login .social-list a {
@@ -21294,15 +21304,15 @@ input[type="search"]::-webkit-search-results-decoration {
     color: #fff;
   }
 
-  .options-info table tr:first-child td,
-  .specifications table tr:first-child td {
+  .options-info table thead th,
+  .specifications table thead th {
     padding: 12px 24px;
     font-size: 16px;
     line-height: 22px;
   }
 
-  .options-info table tr th,
-  .specifications table tr th {
+  .options-info table > tbody tr:first-child td,
+  .specifications table > tbody tr:first-child td {
     padding: 12px 24px;
     font-size: 16px;
     line-height: 22px;
