@@ -328,7 +328,7 @@ $(document).ready(function () {
       });
     }
   });
-  $('input[type="email"]').attr("pattern", "^\/w+[\/w-\/.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$");
+  $('input[type="email"]').attr("pattern", "^\/w+[\/w-\/.]*\/@\/w+((-\/w+)|(\/w*))\/.[a-z]{2,3}$");
   $('.footer-contact_us').click(function (e) {
     e.preventDefault();
     $('body').addClass('modal-active');
