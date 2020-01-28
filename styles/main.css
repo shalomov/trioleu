@@ -8207,28 +8207,6 @@ a.text-dark:focus {
   top: 5px;
 }
 
-.benefits ul {
-  margin-bottom: 0;
-}
-
-.benefits ul li {
-  font-size: 15px;
-  line-height: 20px;
-  color: #4D4D4D;
-  padding-left: 16px;
-  position: relative;
-}
-
-.benefits ul li::before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  border-radius: 50%;
-  left: 0;
-  top: 5px;
-}
-
 .video-wrapp {
   background-color: #F8F9FC;
   padding-top: 72px;
@@ -8848,6 +8826,28 @@ a.text-dark:focus {
 
 .specifications {
   margin-bottom: 24px;
+}
+
+.specifications ul {
+  margin-bottom: 0;
+}
+
+.specifications ul li {
+  font-size: 15px;
+  line-height: 20px;
+  color: #4D4D4D;
+  padding-left: 16px;
+  position: relative;
+}
+
+.specifications ul li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 5px;
 }
 
 .main-wrapp.ak06-product .specifications ul li::before {
@@ -9642,6 +9642,7 @@ a.text-dark:focus {
 
 .contact-item a {
   transition: .3s;
+  color: #000;
 }
 
 .contact-item a:hover {
@@ -11298,6 +11299,10 @@ h3 {
   padding-bottom: 5px;
 }
 
+.event-none {
+  pointer-events: none;
+}
+
 .logo {
   display: inline-block;
   margin-right: 25px;
@@ -11617,10 +11622,14 @@ h3 {
 .login-wrapp .social-login .social-list a {
   transition: .3s;
   display: inline-block;
+  color: #000;
+  display: flex;
+  align-items: center;
 }
 
 .login-wrapp .social-login .social-list a:hover {
   opacity: .7;
+  color: #000;
 }
 
 .login-wrapp .social-login .social-list i {
@@ -21267,15 +21276,6 @@ input[type="search"]::-webkit-search-results-decoration {
     top: 7px;
   }
 
-  .benefits ul li {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .benefits ul li::before {
-    top: 7px;
-  }
-
   .lines-wrapp {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -21462,6 +21462,15 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .specifications {
     margin-bottom: 72px;
+  }
+
+  .specifications ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .specifications ul li::before {
+    top: 7px;
   }
 
   .doc-page {
