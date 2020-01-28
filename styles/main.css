@@ -8330,17 +8330,18 @@ a.text-dark:focus {
   border: 1px solid #fff;
 }
 
-.options-info table + tbody tr td,
-.specifications table + tbody tr td {
+.options-info table thead + tbody tr:first-child td,
+.specifications table thead + tbody tr:first-child td {
   color: #4D4D4D;
   font-size: 15px;
   line-height: 20px;
   padding: 12px;
   vertical-align: top;
+  background-color: #fff;
 }
 
-.options-info table + tbody tr td:first-child,
-.specifications table + tbody tr td:first-child {
+.options-info table thead + tbody tr:first-child td:first-child,
+.specifications table thead + tbody tr:first-child td:first-child {
   font-weight: bold;
   color: #000000;
 }
@@ -21334,8 +21335,8 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 22px;
   }
 
-  .options-info table + tbody tr td,
-  .specifications table + tbody tr td {
+  .options-info table thead + tbody tr:first-child td,
+  .specifications table thead + tbody tr:first-child td {
     padding: 12px 24px;
     font-size: 18px;
     line-height: 22px;
