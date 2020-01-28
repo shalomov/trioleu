@@ -8754,7 +8754,6 @@ a.text-dark:focus {
 
 .line-info .ben-title {
   font-weight: bold;
-  text-transform: uppercase;
   color: #fff;
   margin-bottom: 5px;
   padding-top: 5px;
@@ -9569,6 +9568,14 @@ a.text-dark:focus {
   margin-bottom: 0;
 }
 
+.contact-item a {
+  transition: .3s;
+}
+
+.contact-item a:hover {
+  color: #0055CC;
+}
+
 .contact-item .social-list {
   justify-content: flex-start;
 }
@@ -9904,6 +9911,7 @@ a.text-dark:focus {
 .our-jobs .direction-jobs ul {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .our-jobs .direction-jobs ul li {
@@ -10038,6 +10046,7 @@ a.text-dark:focus {
 .jobs-list .job-content ul ul {
   padding-left: 10px;
   margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .jobs-list .job-content p {
@@ -10083,7 +10092,7 @@ a.text-dark:focus {
 .social-responsibility .responsibility-item .responsibility-desc_wrapp {
   position: relative;
   padding-left: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .social-responsibility .responsibility-item .responsibility-desc_wrapp img {
@@ -10098,6 +10107,10 @@ a.text-dark:focus {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
+}
+
+.social-responsibility .responsibility-item .responsibility-desc_wrapp p {
+  color: #4d4d4d;
 }
 
 .success-stories {
@@ -10361,6 +10374,10 @@ a.text-dark:focus {
 .slider-career_wrapp .slick-dots li button {
   height: 4px;
   padding: 0;
+}
+
+.slider-career_wrapp .slick-dots li button:before {
+  display: none;
 }
 
 .slick-slide:focus {
@@ -19546,6 +19563,10 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-top: 48px;
   }
 
+  .contacts-products_tabs .contacts-tab_content .link-more {
+    margin-bottom: 48px;
+  }
+
   .contacts-products_tabs .contacts-tab_content h3 {
     font-size: 24px;
     line-height: 28px;
@@ -19629,6 +19650,11 @@ input[type="search"]::-webkit-search-results-decoration {
   .jobs-list .jobs-not_found {
     padding-top: 48px;
     padding-bottom: 48px;
+  }
+
+  .social-responsibility .responsibility-item .responsibility-desc_wrapp {
+    margin-bottom: 48px;
+    padding-left: 90px;
   }
 
   .attach-resume .resume-form .send-cv,
@@ -21623,11 +21649,8 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .social-responsibility .responsibility-item .responsibility-desc_wrapp {
-    margin-bottom: 10px;
-  }
-
-  .social-responsibility .responsibility-item .responsibility-desc_wrapp {
-    padding-left: 90px;
+    padding-left: 100px;
+    margin-bottom: 72px;
   }
 
   .social-responsibility .responsibility-item .responsibility-desc_wrapp img {

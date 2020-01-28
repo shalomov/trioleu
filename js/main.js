@@ -151,7 +151,7 @@ $('.slider-career').slick({
   slidesToShow: 1,
   adaptiveHeight: true,
   dots: true,
-  autoplay: true,
+  // autoplay: true,
   autoplaySpeed: 3000,
   prevArrow: $('.prev-slide'),
   nextArrow: $('.next-slide'),
