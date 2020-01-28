@@ -8570,10 +8570,6 @@ a.text-dark:focus {
   background-color: #FF7F00;
 }
 
-.main-wrapp.ak06-product .benefits ul li::before {
-  background-color: #FF7F00;
-}
-
 .main-wrapp.at24-product .sub-title {
   color: #E5AC00;
 }
@@ -8618,10 +8614,6 @@ a.text-dark:focus {
 }
 
 .main-wrapp.at24-product .benefits table td ul li::before {
-  background-color: #E5AC00;
-}
-
-.main-wrapp.at24-product .benefits ul li::before {
   background-color: #E5AC00;
 }
 
@@ -8672,10 +8664,6 @@ a.text-dark:focus {
   background-color: #FF0000;
 }
 
-.main-wrapp.at27-product .benefits ul li::before {
-  background-color: #FF0000;
-}
-
 .main-wrapp.tm01-product .sub-title {
   color: #BB33FF;
 }
@@ -8723,10 +8711,6 @@ a.text-dark:focus {
   background-color: #BB33FF;
 }
 
-.main-wrapp.tm01-product .benefits ul li::before {
-  background-color: #BB33FF;
-}
-
 .main-wrapp.ep01-product .sub-title {
   color: #FF33F7;
 }
@@ -8771,10 +8755,6 @@ a.text-dark:focus {
 }
 
 .main-wrapp.ep01-product .benefits table td ul li::before {
-  background-color: #FF33F7;
-}
-
-.main-wrapp.ep01-product .benefits ul li::before {
   background-color: #FF33F7;
 }
 
@@ -8870,11 +8850,19 @@ a.text-dark:focus {
   margin-bottom: 24px;
 }
 
+.main-wrapp.ak06-product .specifications ul li::before {
+  background-color: #FF7F00;
+}
+
 .main-wrapp.ak06-product .line-title:first-line {
   color: #FF7F00;
 }
 
 .main-wrapp.ak06-product .line-info .ben-title:before {
+  background-color: #FF7F00;
+}
+
+.main-wrapp.at24-product .specifications ul li::before {
   background-color: #FF7F00;
 }
 
@@ -8886,6 +8874,10 @@ a.text-dark:focus {
   background-color: #E5AC00;
 }
 
+.main-wrapp.at27-product .specifications ul li::before {
+  background-color: #FF0000;
+}
+
 .main-wrapp.at27-product .line-title:first-line {
   color: #FF0000;
 }
@@ -8894,12 +8886,20 @@ a.text-dark:focus {
   background-color: #FF0000;
 }
 
+.main-wrapp.tm01-product .specifications ul li::before {
+  background-color: #BB33FF;
+}
+
 .main-wrapp.tm01-product .line-title:first-line {
   color: #BB33FF;
 }
 
 .main-wrapp.tm01-product .line-info .ben-title:before {
   background-color: #BB33FF;
+}
+
+.main-wrapp.ep01-product .specifications ul li::before {
+  background-color: #FF33F7;
 }
 
 .main-wrapp.ep01-product .line-title:first-line {
