@@ -8160,6 +8160,10 @@ a.text-dark:focus {
   width: 100%;
 }
 
+.custom-wrapp_table p {
+  margin-bottom: 0;
+}
+
 .benefits {
   padding: 24px 0;
 }
@@ -8329,6 +8333,22 @@ a.text-dark:focus {
   text-align: center;
   font-weight: bold;
   color: #000000;
+}
+
+.options-info table tr td:first-child td,
+.specifications table tr td:first-child td {
+  background-color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 12px;
+  border: 1px solid #fff;
+}
+
+.options-info table tr td:first-child td:first-child,
+.specifications table tr td:first-child td:first-child {
+  text-align: center;
 }
 
 .options-info table tr:nth-child(2n+1) td,
@@ -8518,6 +8538,10 @@ a.text-dark:focus {
   background-color: #FF7F00;
 }
 
+.main-wrapp.ak06-product .benefits ul li::before {
+  background-color: #FF7F00;
+}
+
 .main-wrapp.at24-product .sub-title {
   color: #E5AC00;
 }
@@ -8562,6 +8586,10 @@ a.text-dark:focus {
 }
 
 .main-wrapp.at24-product .benefits table td ul li::before {
+  background-color: #E5AC00;
+}
+
+.main-wrapp.at24-product .benefits ul li::before {
   background-color: #E5AC00;
 }
 
@@ -8612,6 +8640,10 @@ a.text-dark:focus {
   background-color: #FF0000;
 }
 
+.main-wrapp.at27-product .benefits ul li::before {
+  background-color: #FF0000;
+}
+
 .main-wrapp.tm01-product .sub-title {
   color: #BB33FF;
 }
@@ -8659,6 +8691,10 @@ a.text-dark:focus {
   background-color: #BB33FF;
 }
 
+.main-wrapp.tm01-product .benefits ul li::before {
+  background-color: #BB33FF;
+}
+
 .main-wrapp.ep01-product .sub-title {
   color: #FF33F7;
 }
@@ -8703,6 +8739,10 @@ a.text-dark:focus {
 }
 
 .main-wrapp.ep01-product .benefits table td ul li::before {
+  background-color: #FF33F7;
+}
+
+.main-wrapp.ep01-product .benefits ul li::before {
   background-color: #FF33F7;
 }
 
@@ -11953,6 +11993,18 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .ss-autocomplete-result:hover .ss-autocomplete-result__title {
   color: #fff;
+}
+
+.cc-compliance {
+  justify-content: center;
+}
+
+.cc-compliance > .cc-btn {
+  flex: 0;
+}
+
+.cc-compliance > .cc-btn:last-child {
+  min-width: auto;
 }
 
 .main-content .footer-form_btn,
@@ -21216,6 +21268,13 @@ input[type="search"]::-webkit-search-results-decoration {
   .specifications table tr td {
     padding: 12px 24px;
     font-size: 18px;
+    line-height: 22px;
+  }
+
+  .options-info table tr td:first-child td,
+  .specifications table tr td:first-child td {
+    padding: 12px 24px;
+    font-size: 16px;
     line-height: 22px;
   }
 

@@ -680,7 +680,8 @@ $(document).ready(function () {
     stickyToggle(sticky, stickyWrapper, $(window));
   });
 });
-$(".custom-wrapp_table table , .custom-wrapp_table table tr , .custom-wrapp_table table td , .custom-wrapp_table table th , .custom-wrapp_table table th div").removeAttr("style");
+$(".custom-wrapp_table table , .custom-wrapp_table table tr , .custom-wrapp_table table td , .custom-wrapp_table table th , .custom-wrapp_table table div").removeAttr("style");
+$(".custom-wrapp_table table , .custom-wrapp_table table tr , .custom-wrapp_table table td , .custom-wrapp_table table th , .custom-wrapp_table table div").removeAttr("width");
 
 /***/ }),
 
