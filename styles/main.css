@@ -8207,6 +8207,28 @@ a.text-dark:focus {
   top: 5px;
 }
 
+.benefits ul {
+  margin-bottom: 0;
+}
+
+.benefits ul li {
+  font-size: 15px;
+  line-height: 20px;
+  color: #4D4D4D;
+  padding-left: 16px;
+  position: relative;
+}
+
+.benefits ul li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 5px;
+}
+
 .video-wrapp {
   background-color: #F8F9FC;
   padding-top: 72px;
@@ -21232,6 +21254,15 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .benefits table td ul li::before {
+    top: 7px;
+  }
+
+  .benefits ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .benefits ul li::before {
     top: 7px;
   }
 
