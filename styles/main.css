@@ -7822,6 +7822,7 @@ a.text-dark:focus {
   color: #fff;
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .new-products .product-subtitle {
@@ -7902,7 +7903,6 @@ a.text-dark:focus {
 }
 
 .info-block {
-  padding-top: 24px;
   padding-bottom: 24px;
 }
 
@@ -19397,6 +19397,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .new-products {
     padding-top: 48px;
     padding-bottom: 48px;
+    margin-bottom: 48px;
   }
 
   .new-products .product-subtitle {
@@ -19406,10 +19407,10 @@ input[type="search"]::-webkit-search-results-decoration {
   .new-products .teasier-btn_win,
   .new-products .teasier-btn_gp {
     margin-bottom: 48px;
+    min-height: 57px;
   }
 
   .info-block {
-    padding-top: 48px;
     padding-bottom: 48px;
   }
 
@@ -21044,6 +21045,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .new-products {
     padding-bottom: 146px;
+    margin-bottom: 72px;
   }
 
   .new-products .teasier-btn_win {
@@ -21051,7 +21053,6 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .info-block {
-    padding-top: 72px;
     padding-bottom: 72px;
   }
 
@@ -21153,8 +21154,7 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .benefits table td ul li::before {
-    top: 50%;
-    transform: translateY(-50%);
+    top: 7px;
   }
 
   .lines-wrapp {
