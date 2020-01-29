@@ -8195,6 +8195,7 @@ a.text-dark:focus {
   color: #4D4D4D;
   padding-left: 16px;
   position: relative;
+  font-weight: 400;
 }
 
 .benefits table td ul li::before {
@@ -8384,6 +8385,8 @@ a.text-dark:focus {
   line-height: 20px;
   padding: 12px;
   vertical-align: top;
+  font-weight: normal;
+  color: #4D4D4D;
 }
 
 .options-info table tr td:first-child,
@@ -8392,8 +8395,8 @@ a.text-dark:focus {
   color: #000000;
 }
 
-.options-info table tr:nth-child(2n+2) td,
-.specifications table tr:nth-child(2n+2) td {
+.options-info table tr:nth-child(2n+2),
+.specifications table tr:nth-child(2n+2) {
   background-color: #F9FAFC;
 }
 
@@ -8869,6 +8872,7 @@ a.text-dark:focus {
   color: #4D4D4D;
   padding-left: 16px;
   position: relative;
+  font-weight: 400;
 }
 
 .specifications ul li::before {
@@ -12099,6 +12103,14 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .cc-compliance > .cc-btn:last-child {
   min-width: auto;
+}
+
+.cc-window.cc-invisible {
+  display: none !important;
+}
+
+i.search-img {
+  cursor: pointer;
 }
 
 .main-content .footer-form_btn,
