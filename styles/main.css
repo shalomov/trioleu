@@ -8991,6 +8991,10 @@ a.text-dark:focus {
   border-color: #0055FF;
 }
 
+.tabs-wrapp .doc-tabs {
+  margin-bottom: 24px;
+}
+
 .tabs-wrapp .doc-tabs,
 .tabs-wrapp .patent-tabs {
   display: flex;
@@ -11338,7 +11342,7 @@ h3 {
   padding-bottom: 5px;
 }
 
-.event-none a {
+.event-none > a {
   pointer-events: none;
 }
 
@@ -19619,6 +19623,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .tabs-wrapp {
     margin-top: 26px;
+  }
+
+  .tabs-wrapp .doc-tabs {
+    margin-bottom: 48px;
   }
 
   .tabs-wrapp .doc-tabs li,
