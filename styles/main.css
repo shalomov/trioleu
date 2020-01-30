@@ -9440,6 +9440,27 @@ a.text-dark:focus {
   color: #0055FF;
 }
 
+.results-not_found {
+  color: #E2E3E9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.results-not_found .find_replace {
+  font-size: 80px;
+  line-height: 80px;
+  color: #E2E3E9;
+}
+
+.results-not_found h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
 .main-content.global {
   padding-top: 0;
 }
@@ -19698,6 +19719,11 @@ i.search-img {
   .search-results_page i {
     font-size: 24px;
     line-height: 28px;
+  }
+
+  .results-not_found {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .main-content .first-about {
