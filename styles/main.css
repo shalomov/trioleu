@@ -7694,7 +7694,7 @@ a.text-dark:focus {
 }
 
 .main-content .product-item .product-title {
-  font-family: "tacticsans-blkregular", Arial, sans-serif;
+  font-family: "TacticSans-Blk", Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -8058,7 +8058,7 @@ a.text-dark:focus {
 }
 
 .main-wrapp .sub-title {
-  font-family: "tacticsans-blkregular", Arial, sans-serif;
+  font-family: "TacticSans-Blk", Arial, sans-serif;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
@@ -8160,7 +8160,7 @@ a.text-dark:focus {
   width: 100%;
 }
 
-.custom-wrapp_table p {
+.custom-wrapp_table table p {
   margin-bottom: 0;
 }
 
@@ -8260,7 +8260,7 @@ a.text-dark:focus {
 }
 
 .lines-wrapp .line-item .line-link h3 {
-  font-family: "tacticsans-blkregular", Arial, sans-serif;
+  font-family: "TacticSans-Blk", Arial, sans-serif;
   font-size: 23px;
   line-height: 35px;
   letter-spacing: 0.05em;
@@ -8784,7 +8784,7 @@ a.text-dark:focus {
 }
 
 .main-wrapp.line-product .line-title {
-  font-family: "tacticsans-blkregular", Arial, sans-serif;
+  font-family: "TacticSans-Blk", Arial, sans-serif;
   font-size: 27px;
   line-height: 32px;
   letter-spacing: 0.05em;
@@ -9464,7 +9464,7 @@ a.text-dark:focus {
 }
 
 .main-content .first-about .title-about {
-  font-family: "tacticsans-blkregular", Arial, sans-serif;
+  font-family: "TacticSans-Blk", Arial, sans-serif;
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 0.05em;
@@ -9473,7 +9473,7 @@ a.text-dark:focus {
 }
 
 .main-content .first-about .subtitle-about {
-  font-family: "tacticsans-blkregular", Arial, sans-serif;
+  font-family: "TacticSans-Blk", Arial, sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 25px;
@@ -9576,7 +9576,7 @@ a.text-dark:focus {
 }
 
 .main-content .about-products .about-info_tabs a span {
-  font-family: "tacticsans-blkregular", Arial, sans-serif;
+  font-family: "TacticSans-Blk", Arial, sans-serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
@@ -10597,7 +10597,7 @@ a.text-dark:focus {
 }
 
 .patent-desc {
-  font-family: "tacticsans-blkregular", Arial, sans-serif;
+  font-family: "TacticSans-Blk", Arial, sans-serif;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
@@ -16409,8 +16409,9 @@ i.search-img {
 }
 
 @font-face {
-  font-family: 'tacticsans-blkregular';
-  src: url("../fonts/tacticsans-blk-webfont.woff2") format("woff2"), url("../fonts/tacticsans-blk-webfont.woff") format("woff");
+  font-family: 'TacticSans-Blk';
+  src: url("../fonts/3AEC1A_0_0.eot");
+  src: url("../fonts/3AEC1A_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/3AEC1A_0_0.woff2") format("woff2"), url("../fonts/3AEC1A_0_0.woff") format("woff"), url("../fonts/3AEC1A_0_0.ttf") format("truetype"), url("../fonts/3AEC1A_0_0.svg#wf") format("svg");
   font-weight: 600;
   font-style: normal;
 }
