@@ -11657,11 +11657,11 @@ h3 {
   border-color: #fff;
 }
 
-.login-wrapp .social-login {
+.social-login {
   padding: 0 36px 24px;
 }
 
-.login-wrapp .social-login h4 {
+.social-login h4 {
   font-size: 16px;
   line-height: 18px;
   text-align: center;
@@ -11669,15 +11669,15 @@ h3 {
   margin-bottom: 15px;
 }
 
-.login-wrapp .social-login .social-list {
+.social-login .social-list {
   justify-content: center;
 }
 
-.login-wrapp .social-login .social-list li:not(:last-child) a {
+.social-login .social-list li:not(:last-child) a {
   margin-right: 20px;
 }
 
-.login-wrapp .social-login .social-list li a {
+.social-login .social-list li a {
   padding-left: 0;
   padding-right: 0;
   transition: .3s;
@@ -11687,12 +11687,12 @@ h3 {
   align-items: center;
 }
 
-.login-wrapp .social-login .social-list li a:hover {
+.social-login .social-list li a:hover {
   opacity: .7;
   color: #000;
 }
 
-.login-wrapp .social-login .social-list a {
+.social-login .social-list a {
   transition: .3s;
   display: inline-block;
   color: #000;
@@ -11700,21 +11700,21 @@ h3 {
   align-items: center;
 }
 
-.login-wrapp .social-login .social-list a:hover {
+.social-login .social-list a:hover {
   opacity: .7;
   color: #000;
 }
 
-.login-wrapp .social-login .social-list i {
+.social-login .social-list i {
   font-size: 20px;
   line-height: 20px;
 }
 
-.login-wrapp .social-login .social-list i.fa-facebook-square {
+.social-login .social-list i.fa-facebook-square {
   color: #4267b2;
 }
 
-.login-wrapp .social-login .social-list i.fa-linkedin {
+.social-login .social-list i.fa-linkedin {
   color: #0077b5;
 }
 
