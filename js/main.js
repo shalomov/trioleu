@@ -703,8 +703,7 @@ $(".custom-wrapp_table table , .custom-wrapp_table table tr , .custom-wrapp_tabl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// team-item text modal
-$('#fperson_email').val($(this).closest('.team-item').find('.person-email').val()); // team-item text modal end
+
 
 /***/ }),
 

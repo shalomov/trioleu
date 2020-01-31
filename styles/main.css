@@ -12146,6 +12146,10 @@ i.search-img {
   cursor: pointer;
 }
 
+.alert-success p {
+  margin-bottom: 0;
+}
+
 .main-content .footer-form_btn,
 .main-wrapp .footer-form_btn {
   padding: 14px 24px;
