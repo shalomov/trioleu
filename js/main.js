@@ -292,10 +292,12 @@ $(document).ready(function () {
   });
   $('#resume-add_cv').change(function () {
     if ($(this).attr('required')) {
-      if ($('#resume-add_cv').is(":invalid")) {
-        $('.resume-cv_label').css('border-color', '#dc3545');
-      } else if ($('#resume-add_cv').is(":valid")) {
-        $('.resume-cv_label').css('border-color', '#28a745');
+      if ($('#resume-add_cv').length) {
+        if ($('#resume-add_cv').is(":invalid")) {
+          $('.resume-cv_label').css('border-color', '#dc3545');
+        } else if ($('#resume-add_cv').is(":valid")) {
+          $('.resume-cv_label').css('border-color', '#28a745');
+        }
       }
     }
   });
