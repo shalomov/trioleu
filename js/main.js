@@ -194,15 +194,17 @@ $('.contacts-info_tabs a').click(function (e) {
   $("#" + tab_id).addClass('current-contacts');
 });
 $('.contacts-tab_content .cont-modal').click(function (e) {
+  // hidden input
+  $('#fperson').val($(this).closest('.contact-item_tabs').find('.person-email').val());
+  $('#fperson_email').val($(this).closest('.contact-item_tabs').find('.person-email').val()); // hidden input end
+});
+$('.cont-modal').click(function (e) {
   e.preventDefault();
   var target = $(e.target);
   var authorName = target.siblings('h3').text();
   $('.contacts-modal .message-to').text(authorName);
   $('body').addClass('cont-modal-active');
-  $('.contacts-modal').fadeIn(); // hidden input
-
-  $('#fperson_email').val($(this).closest('.contact-item_tabs').find('.person-email').val()); // hidden input end
-
+  $('.contacts-modal').fadeIn();
   $(document).mouseup(function (e) {
     var div = $(".contacts-modal_wrapp");
 
@@ -705,27 +707,8 @@ $(".custom-wrapp_table table , .custom-wrapp_table table tr , .custom-wrapp_tabl
 
 // team-item text modal
 $('.sup-team .cont-modal').click(function (e) {
-  e.preventDefault();
-  var target = $(e.target);
-  var authorName = target.siblings('h3').text();
-  $('.contacts-modal .message-to').text(authorName);
-  $('body').addClass('cont-modal-active');
-  $('.contacts-modal').fadeIn(); // hidden input
-
-  $('#fperson_email').val($(this).closest('.team-item').find('.person-email').val()); // hidden input end
-
-  $(document).mouseup(function (e) {
-    var div = $(".contacts-modal_wrapp");
-
-    if (!div.is(e.target) && div.has(e.target).length === 0) {
-      $('body').removeClass('cont-modal-active');
-      $('.contacts-modal').fadeOut();
-    }
-  });
-  $('.contacts-modal_wrapp .modal-reg_close').click(function () {
-    $('.contacts-modal').fadeOut();
-    $('body').removeClass('cont-modal-active');
-  });
+  $('#fperson').val($(this).closest('.team-item').find('.person-email').val());
+  $('#fperson_email').val($(this).closest('.team-item').find('.person-email').val());
 }); // team-item text modal end
 
 /***/ }),
