@@ -389,7 +389,7 @@ $('.clear-img').click(function () {
   $('.overlay').css('display', 'none');
   $('.search-form')[0].reset();
   $('body').removeClass('search-modal-active');
-  $('#autocomplete-results div').remove();
+  $('#autocomplete-results').remove();
 });
 $(document).mouseup(function (e) {
   var div = $(".search-wrapp");
@@ -397,6 +397,7 @@ $(document).mouseup(function (e) {
   if (!div.is(e.target) && div.has(e.target).length === 0) {
     $('.overlay').css('display', 'none');
     $('body').removeClass('search-modal-active');
+    $('#autocomplete-results').remove();
   }
 });
 $('.tabs a').click(function () {
