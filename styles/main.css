@@ -8344,15 +8344,23 @@ a.text-dark:focus {
   padding: 12px;
   vertical-align: top;
   background-color: #fff;
+  font-weight: normal;
 }
 
 .options-info table thead + tbody tr:first-child td p,
 .specifications table thead + tbody tr:first-child td p {
-  color: #fff;
+  color: #4D4D4D;
+  font-weight: normal;
 }
 
 .options-info table thead + tbody tr:first-child td:first-child,
 .specifications table thead + tbody tr:first-child td:first-child {
+  font-weight: bold;
+  color: #000000;
+}
+
+.options-info table thead + tbody tr:first-child td:first-child p,
+.specifications table thead + tbody tr:first-child td:first-child p {
   font-weight: bold;
   color: #000000;
 }
@@ -8386,11 +8394,16 @@ a.text-dark:focus {
   padding: 12px;
   vertical-align: top;
   font-weight: normal;
-  color: #4D4D4D;
 }
 
 .options-info table tr td:first-child,
 .specifications table tr td:first-child {
+  font-weight: bold;
+  color: #000000;
+}
+
+.options-info table tr td:first-child p,
+.specifications table tr td:first-child p {
   font-weight: bold;
   color: #000000;
 }

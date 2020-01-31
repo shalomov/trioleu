@@ -389,6 +389,7 @@ $('.clear-img').click(function () {
   $('.overlay').css('display', 'none');
   $('.search-form')[0].reset();
   $('body').removeClass('search-modal-active');
+  $('#autocomplete-results div').remove();
 });
 $(document).mouseup(function (e) {
   var div = $(".search-wrapp");
