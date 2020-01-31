@@ -309,11 +309,13 @@ $(document).ready(function () {
       event.stopPropagation();
       $($form).addClass('was-validated');
 
-      if ($('input[type="checkbox"].form-control').length) {
-        if ($('input[type="checkbox"].form-control').is(":valid")) {
-          $('.was-validated input[type=checkbox].form-control + label').removeClass('req-input');
-        } else {
-          $('.was-validated input[type=checkbox].form-control + label').addClass('req-input');
+      if ($('#resume-add_cv').length) {
+        if ($('input[type="checkbox"].form-control').length) {
+          if ($('input[type="checkbox"].form-control').is(":valid")) {
+            $('.was-validated input[type=checkbox].form-control + label').removeClass('req-input');
+          } else {
+            $('.was-validated input[type=checkbox].form-control + label').addClass('req-input');
+          }
         }
       } // Attach your CV
 
