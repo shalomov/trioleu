@@ -195,7 +195,7 @@ $('.contacts-info_tabs a').click(function (e) {
 });
 $('.contacts-tab_content .cont-modal').click(function (e) {
   // hidden input
-  $('#fperson').val($(this).closest('.contact-item_tabs').find('h3').val());
+  $('#fperson').val($(this).closest('.contact-item_tabs').find('h3').text());
   $('#fperson_email').val($(this).closest('.contact-item_tabs').find('.person-email').val()); // hidden input end
 });
 $('.cont-modal').click(function (e) {
@@ -707,7 +707,7 @@ $(".custom-wrapp_table table , .custom-wrapp_table table tr , .custom-wrapp_tabl
 
 // team-item text modal
 $('.sup-team .cont-modal').click(function (e) {
-  $('#fperson').val($(this).closest('.team-item').find('h3').val());
+  $('#fperson').val($(this).closest('.team-item').find('h3').text());
   $('#fperson_email').val($(this).closest('.team-item').find('.person-email').val());
 }); // team-item text modal end
 
