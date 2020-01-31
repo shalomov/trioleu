@@ -281,18 +281,15 @@ $('.faq-title').click(function () {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  if ($('input[type="checkbox"].form-control').length) {
-    $('input[type="checkbox"].form-control').change(function () {
-      if ($(this).attr('required')) {
-        if ($(this).is(':checked', true)) {
-          $(this).next('label').removeClass('req-input');
-        } else {
-          $(this).next('label').addClass('req-input');
-        }
+  $('input[type="checkbox"].form-control').change(function () {
+    if ($(this).attr('required')) {
+      if ($(this).is(':checked', true)) {
+        $(this).next('label').removeClass('req-input');
+      } else {
+        $(this).next('label').addClass('req-input');
       }
-    });
-  }
-
+    }
+  });
   $('#resume-add_cv').change(function () {
     if ($(this).attr('required')) {
       if ($('#resume-add_cv').is(":invalid")) {
@@ -310,10 +307,12 @@ $(document).ready(function () {
       event.stopPropagation();
       $($form).addClass('was-validated');
 
-      if ($('input[type="checkbox"].form-control').is(":valid")) {
-        $('.was-validated input[type=checkbox].form-control + label').removeClass('req-input');
-      } else {
-        $('.was-validated input[type=checkbox].form-control + label').addClass('req-input');
+      if ($('input[type="checkbox"].form-control').length) {
+        if ($('input[type="checkbox"].form-control').is(":valid")) {
+          $('.was-validated input[type=checkbox].form-control + label').removeClass('req-input');
+        } else {
+          $('.was-validated input[type=checkbox].form-control + label').addClass('req-input');
+        }
       } // Attach your CV
 
 
