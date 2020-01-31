@@ -241,7 +241,7 @@ $(document).ready(function () {
     $(this).next().fadeIn();
     $(this).toggleClass('active-elem');
   });
-  $('.products-list a , .read-more_link, ').click(function (e) {
+  $('.products-list a , .read-more_link').click(function (e) {
     e.preventDefault();
   });
   $('.search-results_page .read-more_link').unbind('click'); // filter content toggle
