@@ -12063,10 +12063,6 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 12px 36px;
 }
 
-.ss-autocomplete-result hr {
-  display: none;
-}
-
 .ss-autocomplete-result .ss-autocomplete-result__title {
   margin-bottom: 0;
 }

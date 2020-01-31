@@ -281,15 +281,18 @@ $('.faq-title').click(function () {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  $('input[type="checkbox"].form-control').change(function () {
-    if ($(this).attr('required')) {
-      if ($(this).is(':checked', true)) {
-        $(this).next('label').removeClass('req-input');
-      } else {
-        $(this).next('label').addClass('req-input');
+  if ($('input[type="checkbox"].form-control').length) {
+    $('input[type="checkbox"].form-control').change(function () {
+      if ($(this).attr('required')) {
+        if ($(this).is(':checked', true)) {
+          $(this).next('label').removeClass('req-input');
+        } else {
+          $(this).next('label').addClass('req-input');
+        }
       }
-    }
-  });
+    });
+  }
+
   $('#resume-add_cv').change(function () {
     if ($(this).attr('required')) {
       if ($('#resume-add_cv').is(":invalid")) {
