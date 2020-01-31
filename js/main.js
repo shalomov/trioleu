@@ -381,7 +381,7 @@ $('.burger-toggle').click(function () {
   $('.region-list a i').removeClass('rotate-i');
   $('.header-list').slideToggle(200).toggleClass('opened');
 });
-$('.search-btn').click(function () {
+$('.search-btn').click(function (e) {
   e.preventDefault();
   $('.overlay').css('display', 'flex');
   $('body').addClass('search-modal-active');
