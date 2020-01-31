@@ -396,8 +396,6 @@ $(document).mouseup(function (e) {
 
   if (!div.is(e.target) && div.has(e.target).length === 0) {
     $('.overlay').css('display', 'none');
-    $('body').removeClass('search-modal-active');
-    $('#autocomplete-results').remove();
   }
 });
 $('.tabs a').click(function () {
