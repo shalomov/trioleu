@@ -12112,7 +12112,6 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #006AFF;
 }
 
-.ss-autocomplete-result:hover .ss-autocomplete-result__content a mark,
 .ss-autocomplete-result:hover .ss-autocomplete-result__content a,
 .ss-autocomplete-result:hover .ss-autocomplete-result__badge {
   color: #fff;
@@ -12124,6 +12123,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .ss-autocomplete-result:hover .ss-autocomplete-result__title {
   color: #fff;
+}
+
+.ss-autocomplete-result:hover .ss-autocomplete-result__content a mark {
+  color: #000;
 }
 
 .cc-compliance {
