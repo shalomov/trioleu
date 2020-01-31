@@ -703,7 +703,30 @@ $(".custom-wrapp_table table , .custom-wrapp_table table tr , .custom-wrapp_tabl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+// team-item text modal
+$('.cont-modal').click(function (e) {
+  e.preventDefault();
+  var target = $(e.target);
+  var authorName = target.siblings('h3').text();
+  $('.contacts-modal .message-to').text(authorName);
+  $('body').addClass('cont-modal-active');
+  $('.contacts-modal').fadeIn(); // hidden input
 
+  $('#fperson_email').val($(this).closest('.team-item').find('.person-email').val()); // hidden input end
+
+  $(document).mouseup(function (e) {
+    var div = $(".contacts-modal_wrapp");
+
+    if (!div.is(e.target) && div.has(e.target).length === 0) {
+      $('body').removeClass('cont-modal-active');
+      $('.contacts-modal').fadeOut();
+    }
+  });
+  $('.contacts-modal_wrapp .modal-reg_close').click(function () {
+    $('.contacts-modal').fadeOut();
+    $('body').removeClass('cont-modal-active');
+  });
+}); // team-item text modal end
 
 /***/ }),
 
