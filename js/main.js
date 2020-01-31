@@ -193,7 +193,7 @@ $('.contacts-info_tabs a').click(function (e) {
   $(this).addClass('current-contacts');
   $("#" + tab_id).addClass('current-contacts');
 });
-$('.cont-modal').click(function (e) {
+$('.contacts-tab_content .cont-modal').click(function (e) {
   e.preventDefault();
   var target = $(e.target);
   var authorName = target.siblings('h3').text();
@@ -704,7 +704,7 @@ $(".custom-wrapp_table table , .custom-wrapp_table table tr , .custom-wrapp_tabl
 /***/ (function(module, exports) {
 
 // team-item text modal
-$('.cont-modal').click(function (e) {
+$('.sup-team .cont-modal').click(function (e) {
   e.preventDefault();
   var target = $(e.target);
   var authorName = target.siblings('h3').text();
