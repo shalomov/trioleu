@@ -469,26 +469,23 @@ $('.sticky-nav_list a, .makeorder').bind('click.smoothscroll', function (event) 
   }
 }); // modal reg
 
-if ($('.modal-reg').length !== 0) {
-  $('.dwnld-link , .login-btn , .product-info .dwld-btn , .about-info .page-btn').click(function () {
-    $('.modal-reg').fadeIn();
-    $('body').addClass('reg-modal-active');
-    $(document).mouseup(function (e) {
-      var div = $(".register-wrapp");
+$('.dwnld-link , .login-btn , .product-info .dwld-btn , .about-info .page-btn').click(function () {
+  $('.modal-reg').fadeIn();
+  $('body').addClass('reg-modal-active');
+  $(document).mouseup(function (e) {
+    var div = $(".register-wrapp");
 
-      if (!div.is(e.target) && div.has(e.target).length === 0) {
-        hideModal();
-        $('body').removeClass('reg-modal-active');
-      }
-    });
-    return false;
+    if (!div.is(e.target) && div.has(e.target).length === 0) {
+      hideModal();
+      $('body').removeClass('reg-modal-active');
+    }
   });
-  $('.modal-reg_close').click(function () {
-    hideModal();
-    $('body').removeClass('reg-modal-active');
-  });
-}
-
+  return false;
+});
+$('.modal-reg_close').click(function () {
+  hideModal();
+  $('body').removeClass('reg-modal-active');
+});
 $('.forgot-pass_link').click(function (e) {
   e.preventDefault();
   $('.reset-wrapp').css('display', 'flex');
