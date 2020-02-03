@@ -238,10 +238,12 @@ $(document).ready(function () {
   }); // filter content toggle
 
   $('.products-list_item > a').click(function (e) {
-    $('.products-list_item > a').next().fadeOut(0);
-    $('.products-list_item > a').removeClass('active-elem');
-    $(this).next().fadeIn();
     $(this).toggleClass('active-elem');
+
+    if ($('.products-list_item > .active-elem').length > 1) {
+      $('.products-list_item > a').removeClass('active-elem');
+      $(this).toggleClass('active-elem');
+    }
   });
   $('.products-list a , .read-more_link').click(function (e) {
     e.preventDefault();

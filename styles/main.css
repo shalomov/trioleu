@@ -9085,6 +9085,10 @@ a.text-dark:focus {
   line-height: 25px;
 }
 
+.products-list .active-elem + .subproducts-list {
+  display: block;
+}
+
 .products-list .subproducts-list {
   padding-left: 0;
   display: none;
@@ -11394,10 +11398,6 @@ h3 {
 .main-header ul.header-list.opened .header-sublist li a {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.event-none > a {
-  pointer-events: none;
 }
 
 .logo {
@@ -20133,6 +20133,10 @@ i.search-img {
   .main-header ul.header-list > li.region-list:hover i {
     transform: rotate(180deg);
     color: #006AFF;
+  }
+
+  .event-none > a {
+    pointer-events: none;
   }
 
   .burger-toggle {
