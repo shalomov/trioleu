@@ -468,8 +468,11 @@ $('.sticky-nav_list a, .makeorder').bind('click.smoothscroll', function (event) 
     }, 900, 'swing');
   }
 }); // modal reg
+// if ($('.modal-reg').length !== 0 ) {
+//     $('.dwnld-link , .login-btn , .product-info .dwld-btn , .about-info .page-btn').click( function() {
+// }
 
-$('.dwnld-link , .login-btn , .product-info .dwld-btn , .about-info .page-btn').click(function () {
+$('.login-btn').click(function () {
   $('.modal-reg').fadeIn();
   $('body').addClass('reg-modal-active');
   $(document).mouseup(function (e) {
