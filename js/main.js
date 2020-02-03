@@ -532,14 +532,6 @@ function hideModal() {
 // path to func
 // \plugins\jorgeandrade\subscribe\assets\javascript\subscribe-scripts.js
 
-
-function target_ga(category) {
-  gtag('event', 'click', {
-    'event_category': category,
-    'event_action': 'click'
-  });
-}
-
 /***/ }),
 
 /***/ "./src/blocks/modules/home/home.js":
