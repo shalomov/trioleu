@@ -444,7 +444,6 @@ if ($(window).width() < 991) {
     });
   });
   $('.header-list > li > a').click(function (e) {
-    e.preventDefault();
     $(this).next('.header-sublist').toggleClass('show-sublist');
 
     if ($('.header-list > li > .show-sublist').length > 1) {
