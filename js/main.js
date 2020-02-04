@@ -457,6 +457,10 @@ if ($(window).width() < 991) {
   });
 }
 
+if ($('.header-list > li > a').next('.header-sublist')) {
+  $(this).addClass('event-none');
+}
+
 $('select').niceSelect();
 $('.sticky-nav_list a, .makeorder').bind('click.smoothscroll', function (event) {
   event.preventDefault();
