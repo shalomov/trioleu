@@ -11400,7 +11400,7 @@ h3 {
   padding-bottom: 5px;
 }
 
-.event-none > a {
+.event-none_footer > a {
   pointer-events: none;
 }
 
@@ -20137,6 +20137,10 @@ i.search-img {
   .main-header ul.header-list > li.region-list:hover i {
     transform: rotate(180deg);
     color: #006AFF;
+  }
+
+  .event-none > a {
+    pointer-events: none;
   }
 
   .burger-toggle {
