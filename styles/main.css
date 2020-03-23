@@ -11005,8 +11005,86 @@ a.text-dark:focus {
   background-color: #D69A00;
 }
 
+.main-content.solution-teasier .new-products {
+  padding-bottom: initial;
+  padding-top: 24px;
+}
+
+.main-content.solution-teasier .new-products .img-teasier_wrapp {
+  max-width: 592px;
+  margin-bottom: 24px;
+}
+
+.main-content.solution-teasier .new-products .teasier-ben_list {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 24px;
+}
+
+.main-content.solution-teasier .new-products .teasier-ben_item {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
 .main-content.solution-teasier .new-products .title-block {
   margin-bottom: 16px;
+}
+
+.main-content.solution-teasier .new-products p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.main-content.solution-teasier .new-products .teasier-interface_wrapp {
+  max-width: 620px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-content.solution-teasier .teasier-functions {
+  background-color: #F8F9FC;
+}
+
+.main-content.solution-teasier .teasier-functions .img-wrapp_func {
+  position: relative;
+  display: inline-block;
+}
+
+.main-content.solution-teasier .teasier-functions .img-wrapp_func:before {
+  content: '';
+  position: absolute;
+  background-color: #006AFF;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+}
+
+.main-content.solution-teasier .teasier-functions .ben-title_func {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 24px;
+  padding-top: 12px;
+}
+
+.main-content.solution-teasier .title-benefints_teasier {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.main-content.solution-teasier .desc-benefints_teasier {
+  font-size: 16px;
+  line-height: 32px;
+  color: #4D4D4D;
+  margin-bottom: 24px;
 }
 
 .main-content.solution-teasier .solution-item_img {
@@ -11064,11 +11142,270 @@ a.text-dark:focus {
 }
 
 .main-content.solution-teasier .teasier-software {
+  padding-top: 48px;
   padding-bottom: 24px;
+}
+
+.main-content.solution-teasier .teasier-software .slider-manual_wrapp {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.main-content.solution-teasier .teasier-software .slider-manual.slick-dotted.slick-slider {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.main-content.solution-teasier .teasier-software .slider-manual .slick-dots {
+  bottom: initial;
+  top: -55px;
+  display: flex;
+}
+
+.main-content.solution-teasier .teasier-software .nav-wrapp span {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.main-content.solution-teasier .teasier-software .nav-wrapp span:hover {
+  opacity: .8;
+}
+
+.main-content.solution-teasier .teasier-software .nav-wrapp span.prev-slide_manual {
+  left: 0;
+}
+
+.main-content.solution-teasier .teasier-software .nav-wrapp span.next-slide_manual {
+  right: 0;
+}
+
+.main-content.solution-teasier .teasier-software .slider-manual_title__wrapp {
+  border: 1px solid #CDD3E4;
+  border-radius: 6px;
+  padding: 12px 24px;
+  text-align: center;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.main-content.solution-teasier .teasier-software .slider-manual_title__wrapp h4 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #0055FF;
+}
+
+.main-content.solution-teasier .teasier-software .slider-manual_title__wrapp h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 0;
 }
 
 .main-content.solution-teasier .solutions-desc_wrapp {
   height: 100%;
+}
+
+.main-content.solution-teasier .reviews-slider_wrapp {
+  background-color: #F8F9FC;
+}
+
+.main-content.solution-teasier .reviews-slider_wrapp .reviews-slider .slick-slide_item img {
+  margin-bottom: 24px;
+}
+
+.main-content.solution-teasier .reviews-slider_wrapp .reviews-slider .slick-slide_item p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.main-content.solution-teasier .reviews-slider_wrapp .reviews-slider .slick-slide_item h4 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #818181;
+  margin-bottom: 12px;
+}
+
+.main-content.solution-teasier .teasier-download_block {
+  padding-top: 24px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 24px;
+}
+
+.main-content.solution-teasier .teasier-download_block .img-teasier_wrapp {
+  margin-bottom: 24px;
+}
+
+.main-content.solution-teasier .teasier-download_block .teasier-btn_win {
+  background-color: #fff;
+  color: #000;
+}
+
+.main-content.solution-teasier .teasier-download_block .teasier-btn_win:hover {
+  background-color: #fff;
+  opacity: .7;
+}
+
+.main-content.solution-teasier .teasier-btn_gp {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: .3s;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 9px 24px;
+  justify-content: center;
+  background-color: #000;
+}
+
+.main-content.solution-teasier .teasier-btn_gp:hover {
+  background-color: rgba(47, 47, 47, 0.7);
+}
+
+.main-content.solution-teasier .teasier-btn_gp.teasier-solution_white {
+  background-color: #fff;
+}
+
+.main-content.solution-teasier .teasier-btn_gp.teasier-solution_white:hover {
+  background-color: rgba(204, 204, 204, 0.7);
+}
+
+.main-content.solution-teasier .teasier-btn_win {
+  color: #fff;
+  background-color: #006AFF;
+  padding: 16px 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: .3s;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.main-content.solution-teasier .teasier-btn_win:hover {
+  background-color: #0055CC;
+}
+
+.main-content.solution-teasier .teasier-btn_win img {
+  margin-right: 10px;
+}
+
+.slider-manual .slick-dots {
+  padding: 0;
+}
+
+.slider-manual .slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 4px;
+  margin: 0 2px 0 0;
+  padding: 0;
+  cursor: pointer;
+  background-color: #CDD3E4;
+  background-size: 100% 100%;
+  background-image: -webkit-gradient(linear, left, right, color-stop(1, #0052ff), color-stop(1, transparent));
+  background-image: -o-linear-gradient(left, #0052ff 100%, transparent);
+  background-image: -moz-linear-gradient(left, #0052ff 100%, transparent);
+  background-image: -webkit-linear-gradient(left, #0052ff 100%, transparent);
+  background-image: linear-gradient(to right, #0052ff 100%, transparent 100%);
+  background-repeat: no-repeat;
+}
+
+.slider-manual .slick-dots li button {
+  display: none !important;
+}
+
+.slider-manual .slick-dots li {
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.slider-manual .slick-dots li:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #CDD3E4;
+  background-size: 100% 100%;
+  background-image: -webkit-gradient(linear, left, right, color-stop(1, #0052ff), color-stop(1, transparent));
+  background-image: -o-linear-gradient(left, #0052ff 100%, transparent);
+  background-image: -moz-linear-gradient(left, #0052ff 100%, transparent);
+  background-image: -webkit-linear-gradient(left, #0052ff 100%, transparent);
+  background-image: linear-gradient(to right, #0052ff 100%, transparent 100%);
+  right: -14px;
+  top: -2px;
+}
+
+.slider-manual .slick-dots li:first-child:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #CDD3E4;
+  background-size: 100% 100%;
+  background-image: -webkit-gradient(linear, left, right, color-stop(1, #0052ff), color-stop(1, transparent));
+  background-image: -o-linear-gradient(left, #0052ff 100%, transparent);
+  background-image: -moz-linear-gradient(left, #0052ff 100%, transparent);
+  background-image: -webkit-linear-gradient(left, #0052ff 100%, transparent);
+  background-image: linear-gradient(to right, #0052ff 100%, transparent 100%);
+  left: -14px;
+  top: -2px;
+}
+
+.slider-manual .slick-dots li span {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  color: #CDD3E4;
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.slider-manual .slick-dots li.slick-active ~ li {
+  background-size: 0% 0%;
+}
+
+.slider-manual .slick-dots li.slick-active ~ li:first-child:before {
+  background-size: 0% 0%;
+}
+
+.slider-manual .slick-dots li.slick-active ~ li:after {
+  background-size: 0% 0%;
+}
+
+.slider-manual .slick-dots li.slick-active:after {
+  transition: .3s;
+  transform: rotate(45deg);
+}
+
+@keyframes right {
+  0% {
+    background-size: 0% 100%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
 }
 
 .main-content.faq-page {
@@ -20046,6 +20383,19 @@ i.search-img {
     margin-bottom: 48px;
   }
 
+  .main-content.solution-teasier .new-products .img-teasier_wrapp {
+    margin-bottom: 48px;
+  }
+
+  .main-content.solution-teasier .new-products .teasier-ben_item {
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  .main-content.solution-teasier .new-products p {
+    margin-bottom: 48px;
+  }
+
   .main-content.solution-teasier .solution-item_content p {
     margin-bottom: 24px;
   }
@@ -20054,8 +20404,44 @@ i.search-img {
     margin-bottom: 24px;
   }
 
-  .main-content.solution-teasier .teasier-software {
-    padding-bottom: 48px;
+  .main-content.solution-teasier .teasier-software .slider-manual_title__wrapp h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .main-content.solution-teasier .reviews-slider_wrapp .reviews-slider .slick-slide_item p {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .main-content.solution-teasier .reviews-slider_wrapp .reviews-slider .slick-slide_item h4 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 24px;
+  }
+
+  .main-content.solution-teasier .reviews-slider_wrapp .reviews-slider .slick-slide_item h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .main-content.solution-teasier .teasier-download_block {
+    min-height: 600px;
+    margin-bottom: 72px;
+  }
+
+  .main-content.solution-teasier .teasier-download_block .img-teasier_wrapp {
+    margin-bottom: 48px;
+  }
+
+  .main-content.solution-teasier .teasier-btn_gp {
+    margin-bottom: 48px;
+    min-height: 57px;
+  }
+
+  .main-content.solution-teasier .teasier-btn_win {
+    margin-bottom: 48px;
+    min-height: 57px;
   }
 
   .main-header .top-bar .slogan-list li:not(:last-child) {
@@ -22056,6 +22442,16 @@ i.search-img {
     max-width: 808px;
   }
 
+  .main-content.solution-teasier .new-products .teasier-interface_wrapp {
+    position: absolute;
+    right: -10px;
+    bottom: -200px;
+  }
+
+  .main-content.solution-teasier .desc-benefints_teasier {
+    margin-bottom: 48px;
+  }
+
   .main-content.solution-teasier .solution-item_img {
     margin-bottom: 48px;
   }
@@ -22072,6 +22468,21 @@ i.search-img {
 
   .main-content.solution-teasier .solution-item_content p {
     margin-bottom: 48px;
+  }
+
+  .main-content.solution-teasier .teasier-software {
+    padding-bottom: 48px;
+    padding-top: 72px;
+  }
+
+  .main-content.solution-teasier .reviews-slider_wrapp .reviews-slider .slick-slide_item p {
+    font-size: 36px;
+    line-height: 56px;
+    margin-bottom: 48px;
+  }
+
+  .main-content.solution-teasier .teasier-btn_win {
+    padding: 16px 30px;
   }
 
   .main-content.faq-page {
@@ -22300,6 +22711,10 @@ i.search-img {
   .our-jobs {
     padding-top: 48px;
     padding-bottom: 72px;
+  }
+
+  .main-content.solution-teasier .teasier-btn_win {
+    padding: 16px 40px;
   }
 
   .container,

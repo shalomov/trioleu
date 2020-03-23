@@ -728,6 +728,44 @@ $('.sup-team .cont-modal').click(function (e) {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/solution-teasier/solution-teasier.js":
+/*!*****************************************************************!*\
+  !*** ./src/blocks/modules/solution-teasier/solution-teasier.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$('.slider-manual').slick({
+  infinite: false,
+  dots: true,
+  customPaging: function customPaging(slider, i) {
+    i++;
+    return '<span>Step ' + i + '</span>';
+  },
+  arrows: true,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: $('.prev-slide_manual'),
+  nextArrow: $('.next-slide_manual'),
+  fade: true,
+  speed: 300,
+  adaptiveHeight: true
+});
+$('.reviews-slider').slick({
+  infinite: true,
+  dots: false,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 500,
+  adaptiveHeight: true
+});
+
+/***/ }),
+
 /***/ "./src/js/import/modules.js":
 /*!**********************************!*\
   !*** ./src/js/import/modules.js ***!
@@ -759,8 +797,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_patents_patents__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_patents_patents__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _modules_faq_faq__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/faq/faq */ "./src/blocks/modules/faq/faq.js");
 /* harmony import */ var _modules_faq_faq__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_faq_faq__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _modules_solution_teasier_solution_teasier__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/solution-teasier/solution-teasier */ "./src/blocks/modules/solution-teasier/solution-teasier.js");
+/* harmony import */ var _modules_solution_teasier_solution_teasier__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_solution_teasier_solution_teasier__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_12__);
+
 
 
 
