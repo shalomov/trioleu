@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/main.min.css">
     </head>
     <body data-spy="scroll" data-target="#sticky-navbar" data-offset="100">
         <header class="main-header">
@@ -324,7 +324,7 @@
                                 <a href="#more-info" class="nav-link">Got any questions?</a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link">Sign In / Registration</a>
+                                <a href="#" class="modal-reg_teasier__btn">Sign In / Registration</a>
                             </li>
                         </ul>
                     </nav>
@@ -334,7 +334,158 @@
     </div>
 </section>
 
+
+
 <main class="main-content solution-teasier global">
+    <section class="subscribe-modal align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="img/solution-single/subscribe-bg.png" alt="subscribe bg">
+                </div>
+                <div class="col-12">
+                    <div class="wrapp-content_subscribe">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+                                <h3>Subscribe to our newsletter</h3>
+                                <p>Subscribe to our newsletter to be the first to know the latest news about TEasier, updates and special offers delivered directly in your inbox.</p>
+                                <form class="form-validation" novalidate="">
+                                    <div class="form-row">
+                                        <div class="form-group col-10 offset-1 col-md-8 offset-md-2">
+                                            <input type="email" placeholder="E-mail" required="required" class="form-control subscribe-input">
+                                        </div>
+                                        <div class="form-group col-10 offset-1 col-md-8 offset-md-2 d-flex justify-content-end">
+                                            <input type="submit" class="subscribe-btn" value="Subscribe">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal-teasier_reg__wrapp align-items-center justify-content-center">
+            <div class="container">
+                <div class="modal-teasier_reg">
+                    <i class="material-icons modal-reg_teasier__close">close</i>
+                    <div class="wrapp-forms_teasier">
+                        <div class="row ">
+                            <div class="col-lg-6 offset-lg-3">
+                                <div class="form-register-teasier-tabs">
+                                    <a href="#" data-tab="signin-teasier-tab-1" class="current-teasier_reg">Sign in</a>
+                                    <a href="#" data-tab="signin-teasier-tab-2">Create an account</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3 col-lg-6 offset-lg-3">
+                                <div id="signin-teasier-tab-1" class="tab-signin_teasier__content current-teasier_reg">
+                                    <form class="form-validation" novalidate="">
+                                        <div class="form-row input-teasier_reg">
+                                            <div class="form-group col-md-6">
+                                                <input type="email" placeholder="E-mail" required="required" class="form-control" name="login">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <input type="password" placeholder="Password" required="required" class="form-control" name="password">
+                                            </div>
+                                        </div>
+                                        <div class="reg-form-teasier_footer">
+                                            <a href="#" class="forgot-pass_teasier">Forgot password?</a>
+                                            <input type="submit" class="login-teasier_btn" value="Login">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="signin-teasier-tab-2" class="tab-signin_teasier__content">
+                                    <form class="form-validation" novalidate="">
+                                        <div class="form-row input-teasier_reg">
+                                            <div class="form-group col-md-6">
+                                                <input type="text" placeholder="Your name" required="required" class="form-control" name="login">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <input type="email" placeholder="E-mail" required="required" class="form-control" name="login">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input type="password" placeholder="Password" required="required" class="form-control" name="password">
+                                            </div>
+                                        </div>
+                                        <div class="reg-form-teasier_footer">
+                                            <a href="#" class="forgot-pass_teasier">Forgot password?</a>
+                                            <input type="submit" class="login-teasier_btn" value="Create an account">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="success-message_teasier__reg">
+                        <div class="row">
+                            <div class="col-xl-6 offset-xl-3">
+                                <h2 class="text-center title-form_teasier__res">Congratulations! You have account in Teasier</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapp-form_reset__teasier">
+                        <div class="row">
+                            <div class="col-xl-6 offset-xl-3">
+                                <h2 class="text-center title-form_teasier__res">Enter your email address to verify your account</h2>
+                            </div>
+                            <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+                                <form class="form-validation" novalidate="">
+                                    <div class="form-row input-teasier_reg">
+                                        <div class="form-group col-md-12">
+                                            <input type="email" placeholder="E-mail" required="required" class="form-control" name="login">
+                                        </div>
+                                    </div>
+                                    <div class="reg-form-teasier_footer">
+                                        <input type="submit" class="login-teasier_btn" value="Reset password">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="success-message_teasier">
+                        <div class="row">
+                            <div class="col-xl-6 offset-xl-3">
+                                <h2 class="text-center title-form_teasier__res">Follow the link that was sent to your e-mail to create a new password</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapp-form_newpass__teasier">
+                        <div class="row">
+                            <div class="col-xl-6 offset-xl-3">
+                                <h2 class="text-center title-form_teasier__res">Create a new password</h2>
+                            </div>
+                            <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+                                <form class="form-validation" novalidate="">
+                                    <div class="form-row input-teasier_reg">
+                                        <div class="form-group col-md-12">
+                                            <input type="password" placeholder="New password" required="required" class="form-control" name="login">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="password" placeholder="Confirm new password" required="required" class="form-control" name="login">
+                                        </div>
+                                    </div>
+                                    <div class="reg-form-teasier_footer">
+                                        <input type="submit" class="login-teasier_btn" value="Reset password">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newpass-message_teasier">
+                        <div class="row">
+                            <div class="col-xl-6 offset-xl-3">
+                                <h2 class="text-center title-form_teasier__res">Your password successfully changed</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <section id="block-about" class="block-about new-products" style="background-image: url('img/main/teasier-back.jpg');">
         <div class="container">
             <div class="row">
@@ -836,10 +987,10 @@
     </div>
 </section>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="./js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.min.js" ></script>
+        <script src="https://cdn.min.jsdelivr.net/npm/popper.min.js@1.16.0/dist/umd/popper.min.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdn.min.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.min.js"></script>
+        <script src="./js/main.min.js"></script>
     </body>
 </html>
