@@ -1,5 +1,1 @@
-<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="arrow_forward_24px">
-<path id="icon/navigation/arrow_forward_24px" d="M6 2L5.295 2.705L8.085 5.5H2V6.5H8.085L5.295 9.295L6 10L10 6L6 2Z" fill="white"/>
-</g>
-</svg>
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="arrow_forward_24px"><path id="icon/navigation/arrow_forward_24px" d="M6 2l-.705.705L8.085 5.5H2v1h6.085l-2.79 2.795L6 10l4-4-4-4z" fill="#fff"/></g></svg>
